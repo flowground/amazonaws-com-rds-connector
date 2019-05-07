@@ -1,0 +1,74 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "DatabaseName": {
+                    "description": " The name for your database of up to 64 alpha-numeric characters. If you do not provide a name, Amazon Aurora will not create a database in the global database cluster you are creating. ",
+                    "type": "string"
+                },
+                "DeletionProtection": {
+                    "description": " The deletion protection setting for the new global database. The global database can't be deleted when this value is set to true. ",
+                    "type": "boolean"
+                },
+                "Engine": {
+                    "description": "Provides the name of the database engine to be used for this DB cluster.",
+                    "type": "string"
+                },
+                "EngineVersion": {
+                    "description": "The engine version of the Aurora global database.",
+                    "type": "string"
+                },
+                "GlobalClusterIdentifier": {
+                    "description": "The cluster identifier of the new global database cluster.",
+                    "type": "string"
+                },
+                "SourceDBClusterIdentifier": {
+                    "description": " The Amazon Resource Name (ARN) to use as the primary cluster of the global database. This parameter is optional. ",
+                    "type": "string"
+                },
+                "StorageEncrypted": {
+                    "description": " The storage encryption setting for the new global database cluster. ",
+                    "type": "boolean"
+                }
+            },
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

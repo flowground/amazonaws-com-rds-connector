@@ -1,0 +1,99 @@
+{
+    "type": "object",
+    "properties": {
+        "MaxRecords": {
+            "required": false,
+            "type": "string"
+        },
+        "Marker": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "<p/>",
+            "properties": {
+                "DBInstanceIdentifier": {
+                    "description": "<p>The customer-assigned name of the DB instance that contains the log files you want to list.</p> <p>Constraints:</p> <ul> <li> <p>Must match the identifier of an existing DBInstance.</p> </li> </ul>",
+                    "type": "string"
+                },
+                "FileLastWritten": {
+                    "description": "Filters the available log files for files written since the specified date, in POSIX timestamp format with milliseconds.",
+                    "type": "integer"
+                },
+                "FileSize": {
+                    "description": "Filters the available log files for files larger than the specified size.",
+                    "type": "integer"
+                },
+                "FilenameContains": {
+                    "description": "Filters the available log files for log file names that contain the specified string.",
+                    "type": "string"
+                },
+                "Filters": {
+                    "description": "This parameter is not currently supported.",
+                    "items": {
+                        "description": "<p>A filter name and value pair that is used to return a more specific list of results from a describe operation. Filters can be used to match a set of resources by specific criteria, such as IDs. The filters supported by a describe operation are documented with the describe operation.</p> <note> <p>Currently, wildcards are not supported in filters.</p> </note> <p>The following actions can be filtered:</p> <ul> <li> <p> <a>DescribeDBClusterBacktracks</a> </p> </li> <li> <p> <a>DescribeDBClusterEndpoints</a> </p> </li> <li> <p> <a>DescribeDBClusters</a> </p> </li> <li> <p> <a>DescribeDBInstances</a> </p> </li> <li> <p> <a>DescribePendingMaintenanceActions</a> </p> </li> </ul>",
+                        "properties": {
+                            "Name": {
+                                "description": "The name of the filter. Filter names are case-sensitive.",
+                                "type": "string"
+                            },
+                            "Values": {
+                                "description": "One or more filter values. Filter values are case-sensitive.",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [
+                            "Name",
+                            "Values"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "Marker": {
+                    "description": "The pagination token provided in the previous request. If this parameter is specified the response includes only records beyond the marker, up to MaxRecords.",
+                    "type": "string"
+                },
+                "MaxRecords": {
+                    "description": "The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "DBInstanceIdentifier"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

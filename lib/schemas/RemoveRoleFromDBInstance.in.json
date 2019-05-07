@@ -1,0 +1,63 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "DBInstanceIdentifier": {
+                    "description": "The name of the DB instance to disassociate the IAM role from.",
+                    "type": "string"
+                },
+                "FeatureName": {
+                    "description": "The name of the feature for the DB instance that the IAM role is to be disassociated from. For the list of supported feature names, see <a>DBEngineVersion</a>. ",
+                    "type": "string"
+                },
+                "RoleArn": {
+                    "description": "The Amazon Resource Name (ARN) of the IAM role to disassociate from the DB instance, for example <code>arn:aws:iam::123456789012:role/AccessRole</code>.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "DBInstanceIdentifier",
+                "RoleArn",
+                "FeatureName"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
