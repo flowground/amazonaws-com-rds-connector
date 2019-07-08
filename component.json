@@ -1,6 +1,6 @@
 {
     "title": "Amazon Relational Database Service",
-    "description": "<fullname>Amazon Relational Database Service</fullname> <p> </p> <p>Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks, freeing up developers to focus on what makes their applications and businesses unique.</p> <p>Amazon RDS gives you access to the capabilities of a MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, Oracle, or Amazon Aurora database server. These capabilities mean that the code, applications, and tools you already use today with your existing databases work with Amazon RDS without modification. Amazon RDS automatically backs up your database and maintains the database software that powers your DB instance. Amazon RDS is flexible: you can scale your DB instance's compute resources and storage capacity to meet your application's demand. As with all Amazon Web Services, there are no up-front investments, and you pay only for the resources you use.</p> <p>This interface reference for Amazon RDS contains documentation for a programming or command line interface you can use to manage Amazon RDS. Note that Amazon RDS is asynchronous, which means that some interfaces might require techniques such as polling or callback functions to determine when a command has been applied. In this reference, the parameter descriptions indicate whether a command is applied immediately, on the next instance reboot, or during the maintenance window. The reference structure is as follows, and we list following some related topics from the user guide.</p> <p> <b>Amazon RDS API Reference</b> </p> <ul> <li> <p>For the alphabetical list of API actions, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Operations.html\">API Actions</a>.</p> </li> <li> <p>For the alphabetical list of data types, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Types.html\">Data Types</a>.</p> </li> <li> <p>For a list of common query parameters, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html\">Common Parameters</a>.</p> </li> <li> <p>For descriptions of the error codes, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html\">Common Errors</a>.</p> </li> </ul> <p> <b>Amazon RDS User Guide</b> </p> <ul> <li> <p>For a summary of the Amazon RDS interfaces, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html#Welcome.Interfaces\">Available RDS Interfaces</a>.</p> </li> <li> <p>For more information about how to use the Query API, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Using_the_Query_API.html\">Using the Query API</a>.</p> </li> </ul>",
+    "description": "Amazon Relational Database Service  \n\nAmazon Relational Database Service (Amazon RDS) is a web service that makes it\neasier to set up, operate, and scale a relational database in the cloud. It\nprovides cost-efficient, resizable capacity for an industry-standard relational\ndatabase and manages common database administration tasks, freeing up developers\nto focus on what makes their applications and businesses unique.\n\nAmazon RDS gives you access to the capabilities of a MySQL, MariaDB, PostgreSQL,\nMicrosoft SQL Server, Oracle, or Amazon Aurora database server. These\ncapabilities mean that the code, applications, and tools you already use today\nwith your existing databases work with Amazon RDS without modification. Amazon\nRDS automatically backs up your database and maintains the database software\nthat powers your DB instance. Amazon RDS is flexible: you can scale your DB\ninstance's compute resources and storage capacity to meet your application's\ndemand. As with all Amazon Web Services, there are no up-front investments, and\nyou pay only for the resources you use.\n\nThis interface reference for Amazon RDS contains documentation for a programming\nor command line interface you can use to manage Amazon RDS. Note that Amazon RDS\nis asynchronous, which means that some interfaces might require techniques such\nas polling or callback functions to determine when a command has been applied.\nIn this reference, the parameter descriptions indicate whether a command is\napplied immediately, on the next instance reboot, or during the maintenance\nwindow. The reference structure is as follows, and we list following some\nrelated topics from the user guide.\n\n Amazon RDS API Reference \n\n *  For the alphabetical list of API actions, see API Actions\n   [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Operations.html]\n   .\n   \n   \n *  For the alphabetical list of data types, see Data Types\n   [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Types.html].\n   \n   \n *  For a list of common query parameters, see Common Parameters\n   [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonParameters.html]\n   .\n   \n   \n *  For descriptions of the error codes, see Common Errors\n   [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/CommonErrors.html]\n   .\n   \n   \n\n Amazon RDS User Guide \n\n *  For a summary of the Amazon RDS interfaces, see Available RDS Interfaces\n   [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html#Welcome.Interfaces]\n   .\n   \n   \n *  For more information about how to use the Query API, see Using the Query API\n   [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Using_the_Query_API.html]\n   .",
     "docsUrl": "https://docs.aws.amazon.com/rds/",
     "url": "https://api.apis.guru/v2/specs/amazonaws.com/rds/2014-10-31/swagger.json",
     "envVars": {},
@@ -20,7 +20,7 @@
                 "label": "Custom Server URL",
                 "viewClass": "TextFieldView"
             },
-            "hmac": {
+            "auth_hmac": {
                 "label": "Authorization (hmac)",
                 "viewClass": "TextFieldView",
                 "note": "Amazon Signature authorization v4"
@@ -38,8 +38,8 @@
     "actions": {
         "AddRoleToDBCluster": {
             "main": "./lib/actions/AddRoleToDBCluster.js",
-            "title": "<p>Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.html\">Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf</a> in the <i>Amazon Aurora User Guide</i>.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.html\">Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf</a> in the <i>Amazon Aurora User Guide</i>.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "AddRoleToDBCluster",
+            "description": "Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB\ncluster. For more information, see Authorizing Amazon Aurora MySQL to Access\nOther AWS Services on Your Behalf\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.html] \nin the Amazon Aurora User Guide.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -55,7 +55,7 @@
         },
         "AddRoleToDBInstance": {
             "main": "./lib/actions/AddRoleToDBInstance.js",
-            "title": "Associates an AWS Identity and Access Management (IAM) role with a DB instance.",
+            "title": "AddRoleToDBInstance",
             "description": "Associates an AWS Identity and Access Management (IAM) role with a DB instance.",
             "fields": {
                 "verbose": {
@@ -72,7 +72,7 @@
         },
         "AddSourceIdentifierToSubscription": {
             "main": "./lib/actions/AddSourceIdentifierToSubscription.js",
-            "title": "Adds a source identifier to an existing RDS event notification subscription.",
+            "title": "AddSourceIdentifierToSubscription",
             "description": "Adds a source identifier to an existing RDS event notification subscription.",
             "fields": {
                 "verbose": {
@@ -89,8 +89,8 @@
         },
         "AddTagsToResource": {
             "main": "./lib/actions/AddTagsToResource.js",
-            "title": "<p>Adds metadata tags to an Amazon RDS resource. These tags can also be used with cost allocation reporting to track cost associated with Amazon RDS resources, or used in a Condition statement in an IAM policy for Amazon RDS.</p> <p>For an overview on tagging Amazon RDS resources, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html\">Tagging Amazon RDS Resources</a>.</p>",
-            "description": "<p>Adds metadata tags to an Amazon RDS resource. These tags can also be used with cost allocation reporting to track cost associated with Amazon RDS resources, or used in a Condition statement in an IAM policy for Amazon RDS.</p> <p>For an overview on tagging Amazon RDS resources, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html\">Tagging Amazon RDS Resources</a>.</p>",
+            "title": "AddTagsToResource",
+            "description": "Adds metadata tags to an Amazon RDS resource. These tags can also be used with\ncost allocation reporting to track cost associated with Amazon RDS resources, or\nused in a Condition statement in an IAM policy for Amazon RDS.\n\nFor an overview on tagging Amazon RDS resources, see Tagging Amazon RDS\nResources\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html].",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -106,7 +106,7 @@
         },
         "ApplyPendingMaintenanceAction": {
             "main": "./lib/actions/ApplyPendingMaintenanceAction.js",
-            "title": "Applies a pending maintenance action to a resource (for example, to a DB instance).",
+            "title": "ApplyPendingMaintenanceAction",
             "description": "Applies a pending maintenance action to a resource (for example, to a DB instance).",
             "fields": {
                 "verbose": {
@@ -123,8 +123,8 @@
         },
         "AuthorizeDBSecurityGroupIngress": {
             "main": "./lib/actions/AuthorizeDBSecurityGroupIngress.js",
-            "title": "<p>Enables ingress to a DBSecurityGroup using one of two forms of authorization. First, EC2 or VPC security groups can be added to the DBSecurityGroup if the application using the database is running on EC2 or VPC instances. Second, IP ranges are available if the application accessing your database is running on the Internet. Required parameters for this API are one of CIDR range, EC2SecurityGroupId for VPC, or (EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId for non-VPC).</p> <note> <p>You can't authorize ingress from an EC2 security group in one AWS Region to an Amazon RDS DB instance in another. You can't authorize ingress from a VPC security group in one VPC to an Amazon RDS DB instance in another.</p> </note> <p>For an overview of CIDR ranges, go to the <a href=\"http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing\">Wikipedia Tutorial</a>. </p>",
-            "description": "<p>Enables ingress to a DBSecurityGroup using one of two forms of authorization. First, EC2 or VPC security groups can be added to the DBSecurityGroup if the application using the database is running on EC2 or VPC instances. Second, IP ranges are available if the application accessing your database is running on the Internet. Required parameters for this API are one of CIDR range, EC2SecurityGroupId for VPC, or (EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId for non-VPC).</p> <note> <p>You can't authorize ingress from an EC2 security group in one AWS Region to an Amazon RDS DB instance in another. You can't authorize ingress from a VPC security group in one VPC to an Amazon RDS DB instance in another.</p> </note> <p>For an overview of CIDR ranges, go to the <a href=\"http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing\">Wikipedia Tutorial</a>. </p>",
+            "title": "AuthorizeDBSecurityGroupIngress",
+            "description": "Enables ingress to a DBSecurityGroup using one of two forms of authorization.\nFirst, EC2 or VPC security groups can be added to the DBSecurityGroup if the\napplication using the database is running on EC2 or VPC instances. Second, IP\nranges are available if the application accessing your database is running on\nthe Internet. Required parameters for this API are one of CIDR range,\nEC2SecurityGroupId for VPC, or (EC2SecurityGroupOwnerId and either\nEC2SecurityGroupName or EC2SecurityGroupId for non-VPC).\n\nYou can't authorize ingress from an EC2 security group in one AWS Region to an\nAmazon RDS DB instance in another. You can't authorize ingress from a VPC\nsecurity group in one VPC to an Amazon RDS DB instance in another.\n\nFor an overview of CIDR ranges, go to the Wikipedia Tutorial\n[http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing].",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -140,8 +140,8 @@
         },
         "BacktrackDBCluster": {
             "main": "./lib/actions/BacktrackDBCluster.js",
-            "title": "<p>Backtracks a DB cluster to a specific time, without creating a new DB cluster.</p> <p>For more information on backtracking, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html\"> Backtracking an Aurora DB Cluster</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Backtracks a DB cluster to a specific time, without creating a new DB cluster.</p> <p>For more information on backtracking, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html\"> Backtracking an Aurora DB Cluster</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "BacktrackDBCluster",
+            "description": "Backtracks a DB cluster to a specific time, without creating a new DB cluster.\n\nFor more information on backtracking, see Backtracking an Aurora DB Cluster\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -157,8 +157,8 @@
         },
         "CopyDBClusterParameterGroup": {
             "main": "./lib/actions/CopyDBClusterParameterGroup.js",
-            "title": "<p>Copies the specified DB cluster parameter group.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Copies the specified DB cluster parameter group.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CopyDBClusterParameterGroup",
+            "description": "Copies the specified DB cluster parameter group.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -174,8 +174,8 @@
         },
         "CopyDBClusterSnapshot": {
             "main": "./lib/actions/CopyDBClusterSnapshot.js",
-            "title": "<p>Copies a snapshot of a DB cluster.</p> <p>To copy a DB cluster snapshot from a shared manual DB cluster snapshot, <code>SourceDBClusterSnapshotIdentifier</code> must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot.</p> <p>You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the <code>CopyDBClusterSnapshot</code> action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:</p> <ul> <li> <p> <code>KmsKeyId</code> - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.</p> </li> <li> <p> <code>PreSignedUrl</code> - A URL that contains a Signature Version 4 signed request for the <code>CopyDBClusterSnapshot</code> action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the <code>CopyDBClusterSnapshot</code> API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied.</p> <p>The pre-signed URL request must contain the following parameter values:</p> <ul> <li> <p> <code>KmsKeyId</code> - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the <code>CopyDBClusterSnapshot</code> action that is called in the destination AWS Region, and the action contained in the pre-signed URL.</p> </li> <li> <p> <code>DestinationRegion</code> - The name of the AWS Region that the DB cluster snapshot will be created in.</p> </li> <li> <p> <code>SourceDBClusterSnapshotIdentifier</code> - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your <code>SourceDBClusterSnapshotIdentifier</code> looks like the following example: <code>arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115</code>.</p> </li> </ul> <p>To learn how to generate a Signature Version 4 signed request, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html\"> Authenticating Requests: Using Query Parameters (AWS Signature Version 4)</a> and <a href=\"https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html\"> Signature Version 4 Signing Process</a>.</p> </li> <li> <p> <code>TargetDBClusterSnapshotIdentifier</code> - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.</p> </li> <li> <p> <code>SourceDBClusterSnapshotIdentifier</code> - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the <code>SourceDBClusterSnapshotIdentifier</code> in the pre-signed URL. </p> </li> </ul> <p>To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by <code>TargetDBClusterSnapshotIdentifier</code> while that DB cluster snapshot is in \"copying\" status.</p> <p>For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_CopySnapshot.html\"> Copying a Snapshot</a> in the <i>Amazon Aurora User Guide.</i> </p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Copies a snapshot of a DB cluster.</p> <p>To copy a DB cluster snapshot from a shared manual DB cluster snapshot, <code>SourceDBClusterSnapshotIdentifier</code> must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot.</p> <p>You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the <code>CopyDBClusterSnapshot</code> action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:</p> <ul> <li> <p> <code>KmsKeyId</code> - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.</p> </li> <li> <p> <code>PreSignedUrl</code> - A URL that contains a Signature Version 4 signed request for the <code>CopyDBClusterSnapshot</code> action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the <code>CopyDBClusterSnapshot</code> API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied.</p> <p>The pre-signed URL request must contain the following parameter values:</p> <ul> <li> <p> <code>KmsKeyId</code> - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the <code>CopyDBClusterSnapshot</code> action that is called in the destination AWS Region, and the action contained in the pre-signed URL.</p> </li> <li> <p> <code>DestinationRegion</code> - The name of the AWS Region that the DB cluster snapshot will be created in.</p> </li> <li> <p> <code>SourceDBClusterSnapshotIdentifier</code> - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your <code>SourceDBClusterSnapshotIdentifier</code> looks like the following example: <code>arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115</code>.</p> </li> </ul> <p>To learn how to generate a Signature Version 4 signed request, see <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html\"> Authenticating Requests: Using Query Parameters (AWS Signature Version 4)</a> and <a href=\"https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html\"> Signature Version 4 Signing Process</a>.</p> </li> <li> <p> <code>TargetDBClusterSnapshotIdentifier</code> - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.</p> </li> <li> <p> <code>SourceDBClusterSnapshotIdentifier</code> - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the <code>SourceDBClusterSnapshotIdentifier</code> in the pre-signed URL. </p> </li> </ul> <p>To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by <code>TargetDBClusterSnapshotIdentifier</code> while that DB cluster snapshot is in \"copying\" status.</p> <p>For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_CopySnapshot.html\"> Copying a Snapshot</a> in the <i>Amazon Aurora User Guide.</i> </p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CopyDBClusterSnapshot",
+            "description": "Copies a snapshot of a DB cluster.\n\nTo copy a DB cluster snapshot from a shared manual DB cluster snapshot, \nSourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the\nshared DB cluster snapshot.\n\nYou can copy an encrypted DB cluster snapshot from another AWS Region. In that\ncase, the AWS Region where you call the CopyDBClusterSnapshot action is the\ndestination AWS Region for the encrypted DB cluster snapshot to be copied to. To\ncopy an encrypted DB cluster snapshot from another AWS Region, you must provide\nthe following values:\n\n *   KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the\n   key to use to encrypt the copy of the DB cluster snapshot in the destination\n   AWS Region.\n   \n   \n *   PreSignedUrl - A URL that contains a Signature Version 4 signed request for\n   the CopyDBClusterSnapshot action to be called in the source AWS Region where\n   the DB cluster snapshot is copied from. The pre-signed URL must be a valid\n   request for the CopyDBClusterSnapshot API action that can be executed in the\n   source AWS Region that contains the encrypted DB cluster snapshot to be\n   copied.\n   \n   The pre-signed URL request must contain the following parameter values:\n   \n    *   KmsKeyId - The KMS key identifier for the key to use to encrypt the copy\n      of the DB cluster snapshot in the destination AWS Region. This is the same\n      identifier for both the CopyDBClusterSnapshot action that is called in the\n      destination AWS Region, and the action contained in the pre-signed URL.\n      \n      \n    *   DestinationRegion - The name of the AWS Region that the DB cluster\n      snapshot will be created in.\n      \n      \n    *   SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier\n      for the encrypted DB cluster snapshot to be copied. This identifier must\n      be in the Amazon Resource Name (ARN) format for the source AWS Region. For\n      example, if you are copying an encrypted DB cluster snapshot from the\n      us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks\n      like the following example: \n      arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115\n      .\n      \n      \n   \n   To learn how to generate a Signature Version 4 signed request, see \n   Authenticating Requests: Using Query Parameters (AWS Signature Version 4)\n   [https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html] \n   and Signature Version 4 Signing Process\n   [https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html].\n   \n   \n *   TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the\n   DB cluster snapshot in the destination AWS Region.\n   \n   \n *   SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for\n   the encrypted DB cluster snapshot to be copied. This identifier must be in\n   the ARN format for the source AWS Region and is the same value as the \n   SourceDBClusterSnapshotIdentifier in the pre-signed URL. \n   \n   \n\nTo cancel the copy operation once it is in progress, delete the target DB\ncluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB\ncluster snapshot is in \"copying\" status.\n\nFor more information on copying encrypted DB cluster snapshots from one AWS\nRegion to another, see Copying a Snapshot\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_CopySnapshot.html] \nin the Amazon Aurora User Guide. \n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -191,7 +191,7 @@
         },
         "CopyDBParameterGroup": {
             "main": "./lib/actions/CopyDBParameterGroup.js",
-            "title": "Copies the specified DB parameter group.",
+            "title": "CopyDBParameterGroup",
             "description": "Copies the specified DB parameter group.",
             "fields": {
                 "verbose": {
@@ -208,8 +208,8 @@
         },
         "CopyDBSnapshot": {
             "main": "./lib/actions/CopyDBSnapshot.js",
-            "title": "<p>Copies the specified DB snapshot. The source DB snapshot must be in the \"available\" state.</p> <p>You can copy a snapshot from one AWS Region to another. In that case, the AWS Region where you call the <code>CopyDBSnapshot</code> action is the destination AWS Region for the DB snapshot copy. </p> <p>For more information about copying snapshots, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CopyDBSnapshot.html\">Copying a DB Snapshot</a> in the <i>Amazon RDS User Guide.</i> </p>",
-            "description": "<p>Copies the specified DB snapshot. The source DB snapshot must be in the \"available\" state.</p> <p>You can copy a snapshot from one AWS Region to another. In that case, the AWS Region where you call the <code>CopyDBSnapshot</code> action is the destination AWS Region for the DB snapshot copy. </p> <p>For more information about copying snapshots, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CopyDBSnapshot.html\">Copying a DB Snapshot</a> in the <i>Amazon RDS User Guide.</i> </p>",
+            "title": "CopyDBSnapshot",
+            "description": "Copies the specified DB snapshot. The source DB snapshot must be in the\n\"available\" state.\n\nYou can copy a snapshot from one AWS Region to another. In that case, the AWS\nRegion where you call the CopyDBSnapshot action is the destination AWS Region\nfor the DB snapshot copy. \n\nFor more information about copying snapshots, see Copying a DB Snapshot\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CopyDBSnapshot.html] \nin the Amazon RDS User Guide.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -225,7 +225,7 @@
         },
         "CopyOptionGroup": {
             "main": "./lib/actions/CopyOptionGroup.js",
-            "title": "Copies the specified option group.",
+            "title": "CopyOptionGroup",
             "description": "Copies the specified option group.",
             "fields": {
                 "verbose": {
@@ -242,8 +242,8 @@
         },
         "CreateDBCluster": {
             "main": "./lib/actions/CreateDBCluster.js",
-            "title": "<p>Creates a new Amazon Aurora DB cluster.</p> <p>You can use the <code>ReplicationSourceIdentifier</code> parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by <code>ReplicationSourceIdentifier</code> is encrypted, you must also specify the <code>PreSignedUrl</code> parameter.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Creates a new Amazon Aurora DB cluster.</p> <p>You can use the <code>ReplicationSourceIdentifier</code> parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by <code>ReplicationSourceIdentifier</code> is encrypted, you must also specify the <code>PreSignedUrl</code> parameter.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CreateDBCluster",
+            "description": "Creates a new Amazon Aurora DB cluster.\n\nYou can use the ReplicationSourceIdentifier parameter to create the DB cluster\nas a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For\ncross-region replication where the DB cluster identified by \nReplicationSourceIdentifier is encrypted, you must also specify the PreSignedUrl \nparameter.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -259,8 +259,8 @@
         },
         "CreateDBClusterEndpoint": {
             "main": "./lib/actions/CreateDBClusterEndpoint.js",
-            "title": "<p>Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CreateDBClusterEndpoint",
+            "description": "Creates a new custom endpoint and associates it with an Amazon Aurora DB\ncluster.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -276,8 +276,8 @@
         },
         "CreateDBClusterParameterGroup": {
             "main": "./lib/actions/CreateDBClusterParameterGroup.js",
-            "title": "<p>Creates a new DB cluster parameter group.</p> <p>Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.</p> <p> A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using <a>ModifyDBClusterParameterGroup</a>. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using <a>ModifyDBCluster</a>. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect. </p> <important> <p>After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <a>DescribeDBClusterParameters</a> command to verify that your DB cluster parameter group has been created or modified.</p> </important> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Creates a new DB cluster parameter group.</p> <p>Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.</p> <p> A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using <a>ModifyDBClusterParameterGroup</a>. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using <a>ModifyDBCluster</a>. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect. </p> <important> <p>After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <a>DescribeDBClusterParameters</a> command to verify that your DB cluster parameter group has been created or modified.</p> </important> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CreateDBClusterParameterGroup",
+            "description": "Creates a new DB cluster parameter group.\n\nParameters in a DB cluster parameter group apply to all of the instances in a DB\ncluster.\n\n A DB cluster parameter group is initially created with the default parameters\nfor the database engine used by instances in the DB cluster. To provide custom\nvalues for any of the parameters, you must modify the group after creating it\nusing ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter\ngroup, you need to associate it with your DB cluster using ModifyDBCluster. When\nyou associate a new DB cluster parameter group with a running DB cluster, you\nneed to reboot the DB instances in the DB cluster without failover for the new\nDB cluster parameter group and associated settings to take effect. \n\nAfter you create a DB cluster parameter group, you should wait at least 5\nminutes before creating your first DB cluster that uses that DB cluster\nparameter group as the default parameter group. This allows Amazon RDS to fully\ncomplete the create action before the DB cluster parameter group is used as the\ndefault for a new DB cluster. This is especially important for parameters that\nare critical when creating the default database for a DB cluster, such as the\ncharacter set for the default database defined by the character_set_database \nparameter. You can use the Parameter Groups option of the Amazon RDS console\n[https://console.aws.amazon.com/rds/] or the DescribeDBClusterParameters command\nto verify that your DB cluster parameter group has been created or modified.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -293,8 +293,8 @@
         },
         "CreateDBClusterSnapshot": {
             "main": "./lib/actions/CreateDBClusterSnapshot.js",
-            "title": "<p>Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CreateDBClusterSnapshot",
+            "description": "Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see \nWhat Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -310,7 +310,7 @@
         },
         "CreateDBInstance": {
             "main": "./lib/actions/CreateDBInstance.js",
-            "title": "Creates a new DB instance.",
+            "title": "CreateDBInstance",
             "description": "Creates a new DB instance.",
             "fields": {
                 "verbose": {
@@ -327,8 +327,8 @@
         },
         "CreateDBInstanceReadReplica": {
             "main": "./lib/actions/CreateDBInstanceReadReplica.js",
-            "title": "<p>Creates a new DB instance that acts as a Read Replica for an existing source DB instance. You can create a Read Replica for a DB instance running MySQL, MariaDB, or PostgreSQL. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html\">Working with PostgreSQL, MySQL, and MariaDB Read Replicas</a> in the <i>Amazon RDS User Guide</i>. </p> <p>Amazon Aurora doesn't support this action. You must call the <code>CreateDBInstance</code> action to create a DB instance for an Aurora DB cluster. </p> <p>All Read Replica DB instances are created with backups disabled. All other DB instance attributes (including DB security groups and DB parameter groups) are inherited from the source DB instance, except as specified following. </p> <important> <p>Your source DB instance must have backup retention enabled. </p> </important>",
-            "description": "<p>Creates a new DB instance that acts as a Read Replica for an existing source DB instance. You can create a Read Replica for a DB instance running MySQL, MariaDB, or PostgreSQL. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html\">Working with PostgreSQL, MySQL, and MariaDB Read Replicas</a> in the <i>Amazon RDS User Guide</i>. </p> <p>Amazon Aurora doesn't support this action. You must call the <code>CreateDBInstance</code> action to create a DB instance for an Aurora DB cluster. </p> <p>All Read Replica DB instances are created with backups disabled. All other DB instance attributes (including DB security groups and DB parameter groups) are inherited from the source DB instance, except as specified following. </p> <important> <p>Your source DB instance must have backup retention enabled. </p> </important>",
+            "title": "CreateDBInstanceReadReplica",
+            "description": "Creates a new DB instance that acts as a Read Replica for an existing source DB\ninstance. You can create a Read Replica for a DB instance running MySQL,\nMariaDB, or PostgreSQL. For more information, see Working with PostgreSQL,\nMySQL, and MariaDB Read Replicas\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html] in\nthe Amazon RDS User Guide. \n\nAmazon Aurora doesn't support this action. You must call the CreateDBInstance \naction to create a DB instance for an Aurora DB cluster. \n\nAll Read Replica DB instances are created with backups disabled. All other DB\ninstance attributes (including DB security groups and DB parameter groups) are\ninherited from the source DB instance, except as specified following. \n\nYour source DB instance must have backup retention enabled.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -344,8 +344,8 @@
         },
         "CreateDBParameterGroup": {
             "main": "./lib/actions/CreateDBParameterGroup.js",
-            "title": "<p>Creates a new DB parameter group.</p> <p> A DB parameter group is initially created with the default parameters for the database engine used by the DB instance. To provide custom values for any of the parameters, you must modify the group after creating it using <i>ModifyDBParameterGroup</i>. Once you've created a DB parameter group, you need to associate it with your DB instance using <i>ModifyDBInstance</i>. When you associate a new DB parameter group with a running DB instance, you need to reboot the DB instance without failover for the new DB parameter group and associated settings to take effect. </p> <important> <p>After you create a DB parameter group, you should wait at least 5 minutes before creating your first DB instance that uses that DB parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB instance. This is especially important for parameters that are critical when creating the default database for a DB instance, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <i>DescribeDBParameters</i> command to verify that your DB parameter group has been created or modified.</p> </important>",
-            "description": "<p>Creates a new DB parameter group.</p> <p> A DB parameter group is initially created with the default parameters for the database engine used by the DB instance. To provide custom values for any of the parameters, you must modify the group after creating it using <i>ModifyDBParameterGroup</i>. Once you've created a DB parameter group, you need to associate it with your DB instance using <i>ModifyDBInstance</i>. When you associate a new DB parameter group with a running DB instance, you need to reboot the DB instance without failover for the new DB parameter group and associated settings to take effect. </p> <important> <p>After you create a DB parameter group, you should wait at least 5 minutes before creating your first DB instance that uses that DB parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB instance. This is especially important for parameters that are critical when creating the default database for a DB instance, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <i>DescribeDBParameters</i> command to verify that your DB parameter group has been created or modified.</p> </important>",
+            "title": "CreateDBParameterGroup",
+            "description": "Creates a new DB parameter group.\n\n A DB parameter group is initially created with the default parameters for the\ndatabase engine used by the DB instance. To provide custom values for any of the\nparameters, you must modify the group after creating it using \nModifyDBParameterGroup. Once you've created a DB parameter group, you need to\nassociate it with your DB instance using ModifyDBInstance. When you associate a\nnew DB parameter group with a running DB instance, you need to reboot the DB\ninstance without failover for the new DB parameter group and associated settings\nto take effect. \n\nAfter you create a DB parameter group, you should wait at least 5 minutes before\ncreating your first DB instance that uses that DB parameter group as the default\nparameter group. This allows Amazon RDS to fully complete the create action\nbefore the parameter group is used as the default for a new DB instance. This is\nespecially important for parameters that are critical when creating the default\ndatabase for a DB instance, such as the character set for the default database\ndefined by the character_set_database parameter. You can use the Parameter\nGroups option of the Amazon RDS console [https://console.aws.amazon.com/rds/] or\nthe DescribeDBParameters command to verify that your DB parameter group has been\ncreated or modified.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -361,8 +361,8 @@
         },
         "CreateDBSecurityGroup": {
             "main": "./lib/actions/CreateDBSecurityGroup.js",
-            "title": "<p>Creates a new DB security group. DB security groups control access to a DB instance.</p> <note> <p>A DB security group controls access to EC2-Classic DB instances that are not in a VPC.</p> </note>",
-            "description": "<p>Creates a new DB security group. DB security groups control access to a DB instance.</p> <note> <p>A DB security group controls access to EC2-Classic DB instances that are not in a VPC.</p> </note>",
+            "title": "CreateDBSecurityGroup",
+            "description": "Creates a new DB security group. DB security groups control access to a DB\ninstance.\n\nA DB security group controls access to EC2-Classic DB instances that are not in\na VPC.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -378,7 +378,7 @@
         },
         "CreateDBSnapshot": {
             "main": "./lib/actions/CreateDBSnapshot.js",
-            "title": "Creates a DBSnapshot. The source DBInstance must be in \"available\" state.",
+            "title": "CreateDBSnapshot",
             "description": "Creates a DBSnapshot. The source DBInstance must be in \"available\" state.",
             "fields": {
                 "verbose": {
@@ -395,7 +395,7 @@
         },
         "CreateDBSubnetGroup": {
             "main": "./lib/actions/CreateDBSubnetGroup.js",
-            "title": "Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.",
+            "title": "CreateDBSubnetGroup",
             "description": "Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.",
             "fields": {
                 "verbose": {
@@ -412,8 +412,8 @@
         },
         "CreateEventSubscription": {
             "main": "./lib/actions/CreateEventSubscription.js",
-            "title": "<p>Creates an RDS event notification subscription. This action requires a topic ARN (Amazon Resource Name) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console.</p> <p>You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup.</p> <p>If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you do not specify either the SourceType nor the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.</p>",
-            "description": "<p>Creates an RDS event notification subscription. This action requires a topic ARN (Amazon Resource Name) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console.</p> <p>You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup.</p> <p>If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you do not specify either the SourceType nor the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.</p>",
+            "title": "CreateEventSubscription",
+            "description": "Creates an RDS event notification subscription. This action requires a topic ARN\n(Amazon Resource Name) created by either the RDS console, the SNS console, or\nthe SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS\nand subscribe to the topic. The ARN is displayed in the SNS console.\n\nYou can specify the type of source (SourceType) you want to be notified of,\nprovide a list of RDS sources (SourceIds) that triggers the events, and provide\na list of event categories (EventCategories) for events you want to be notified\nof. For example, you can specify SourceType = db-instance, SourceIds =\nmydbinstance1, mydbinstance2 and EventCategories = Availability, Backup.\n\nIf you specify both the SourceType and SourceIds, such as SourceType =\ndb-instance and SourceIdentifier = myDBInstance1, you are notified of all the\ndb-instance events for the specified source. If you specify a SourceType but do\nnot specify a SourceIdentifier, you receive notice of the events for that source\ntype for all your RDS sources. If you do not specify either the SourceType nor\nthe SourceIdentifier, you are notified of events generated from all RDS sources\nbelonging to your customer account.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -429,8 +429,8 @@
         },
         "CreateGlobalCluster": {
             "main": "./lib/actions/CreateGlobalCluster.js",
-            "title": "<p> </p> <p> Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem. </p> <p> You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> </p> <p> Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem. </p> <p> You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "CreateGlobalCluster",
+            "description": " \n\n Creates an Aurora global database spread across multiple regions. The global\ndatabase contains a single primary cluster with read-write capability, and a\nread-only secondary cluster that receives data from the primary cluster through\nhigh-speed replication performed by the Aurora storage subsystem. \n\n You can create a global database that is initially empty, and then add a\nprimary cluster and a secondary cluster to it. Or you can specify an existing\nAurora cluster during the create operation, and this cluster becomes the primary\ncluster of the global database. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -446,7 +446,7 @@
         },
         "CreateOptionGroup": {
             "main": "./lib/actions/CreateOptionGroup.js",
-            "title": "Creates a new option group. You can create up to 20 option groups.",
+            "title": "CreateOptionGroup",
             "description": "Creates a new option group. You can create up to 20 option groups.",
             "fields": {
                 "verbose": {
@@ -463,8 +463,8 @@
         },
         "DeleteDBCluster": {
             "main": "./lib/actions/DeleteDBCluster.js",
-            "title": "<p>The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.</p> <p/> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.</p> <p/> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DeleteDBCluster",
+            "description": "The DeleteDBCluster action deletes a previously provisioned DB cluster. When you\ndelete a DB cluster, all automated backups for that DB cluster are deleted and\ncan't be recovered. Manual DB cluster snapshots of the specified DB cluster are\nnot deleted.\n\n \n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -480,8 +480,8 @@
         },
         "DeleteDBClusterEndpoint": {
             "main": "./lib/actions/DeleteDBClusterEndpoint.js",
-            "title": "<p>Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DeleteDBClusterEndpoint",
+            "description": "Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -497,8 +497,8 @@
         },
         "DeleteDBClusterParameterGroup": {
             "main": "./lib/actions/DeleteDBClusterParameterGroup.js",
-            "title": "<p>Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DeleteDBClusterParameterGroup",
+            "description": "Deletes a specified DB cluster parameter group. The DB cluster parameter group\nto be deleted can't be associated with any DB clusters.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -514,8 +514,8 @@
         },
         "DeleteDBClusterSnapshot": {
             "main": "./lib/actions/DeleteDBClusterSnapshot.js",
-            "title": "<p>Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.</p> <note> <p>The DB cluster snapshot must be in the <code>available</code> state to be deleted.</p> </note> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.</p> <note> <p>The DB cluster snapshot must be in the <code>available</code> state to be deleted.</p> </note> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DeleteDBClusterSnapshot",
+            "description": "Deletes a DB cluster snapshot. If the snapshot is being copied, the copy\noperation is terminated.\n\nThe DB cluster snapshot must be in the available state to be deleted.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -531,8 +531,8 @@
         },
         "DeleteDBInstance": {
             "main": "./lib/actions/DeleteDBInstance.js",
-            "title": "<p>The DeleteDBInstance action deletes a previously provisioned DB instance. When you delete a DB instance, all automated backups for that instance are deleted and can't be recovered. Manual DB snapshots of the DB instance to be deleted by <code>DeleteDBInstance</code> are not deleted.</p> <p> If you request a final DB snapshot the status of the Amazon RDS DB instance is <code>deleting</code> until the DB snapshot is created. The API action <code>DescribeDBInstance</code> is used to monitor the status of this operation. The action can't be canceled or reverted once submitted. </p> <p>Note that when a DB instance is in a failure state and has a status of <code>failed</code>, <code>incompatible-restore</code>, or <code>incompatible-network</code>, you can only delete it when the <code>SkipFinalSnapshot</code> parameter is set to <code>true</code>.</p> <p>If the specified DB instance is part of an Amazon Aurora DB cluster, you can't delete the DB instance if both of the following conditions are true:</p> <ul> <li> <p>The DB cluster is a Read Replica of another Amazon Aurora DB cluster.</p> </li> <li> <p>The DB instance is the only instance in the DB cluster.</p> </li> </ul> <p>To delete a DB instance in this case, first call the <a>PromoteReadReplicaDBCluster</a> API action to promote the DB cluster so it's no longer a Read Replica. After the promotion completes, then call the <code>DeleteDBInstance</code> API action to delete the final instance in the DB cluster.</p>",
-            "description": "<p>The DeleteDBInstance action deletes a previously provisioned DB instance. When you delete a DB instance, all automated backups for that instance are deleted and can't be recovered. Manual DB snapshots of the DB instance to be deleted by <code>DeleteDBInstance</code> are not deleted.</p> <p> If you request a final DB snapshot the status of the Amazon RDS DB instance is <code>deleting</code> until the DB snapshot is created. The API action <code>DescribeDBInstance</code> is used to monitor the status of this operation. The action can't be canceled or reverted once submitted. </p> <p>Note that when a DB instance is in a failure state and has a status of <code>failed</code>, <code>incompatible-restore</code>, or <code>incompatible-network</code>, you can only delete it when the <code>SkipFinalSnapshot</code> parameter is set to <code>true</code>.</p> <p>If the specified DB instance is part of an Amazon Aurora DB cluster, you can't delete the DB instance if both of the following conditions are true:</p> <ul> <li> <p>The DB cluster is a Read Replica of another Amazon Aurora DB cluster.</p> </li> <li> <p>The DB instance is the only instance in the DB cluster.</p> </li> </ul> <p>To delete a DB instance in this case, first call the <a>PromoteReadReplicaDBCluster</a> API action to promote the DB cluster so it's no longer a Read Replica. After the promotion completes, then call the <code>DeleteDBInstance</code> API action to delete the final instance in the DB cluster.</p>",
+            "title": "DeleteDBInstance",
+            "description": "The DeleteDBInstance action deletes a previously provisioned DB instance. When\nyou delete a DB instance, all automated backups for that instance are deleted\nand can't be recovered. Manual DB snapshots of the DB instance to be deleted by \nDeleteDBInstance are not deleted.\n\n If you request a final DB snapshot the status of the Amazon RDS DB instance is \ndeleting until the DB snapshot is created. The API action DescribeDBInstance is\nused to monitor the status of this operation. The action can't be canceled or\nreverted once submitted. \n\nNote that when a DB instance is in a failure state and has a status of failed, \nincompatible-restore, or incompatible-network, you can only delete it when the \nSkipFinalSnapshot parameter is set to true.\n\nIf the specified DB instance is part of an Amazon Aurora DB cluster, you can't\ndelete the DB instance if both of the following conditions are true:\n\n *  The DB cluster is a Read Replica of another Amazon Aurora DB cluster.\n   \n   \n *  The DB instance is the only instance in the DB cluster.\n   \n   \n\nTo delete a DB instance in this case, first call the PromoteReadReplicaDBCluster \nAPI action to promote the DB cluster so it's no longer a Read Replica. After the\npromotion completes, then call the DeleteDBInstance API action to delete the\nfinal instance in the DB cluster.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -548,7 +548,7 @@
         },
         "DeleteDBInstanceAutomatedBackup": {
             "main": "./lib/actions/DeleteDBInstanceAutomatedBackup.js",
-            "title": "Deletes automated backups based on the source instance's <code>DbiResourceId</code> value or the restorable instance's resource ID.",
+            "title": "DeleteDBInstanceAutomatedBackup",
             "description": "Deletes automated backups based on the source instance's <code>DbiResourceId</code> value or the restorable instance's resource ID.",
             "fields": {
                 "verbose": {
@@ -565,7 +565,7 @@
         },
         "DeleteDBParameterGroup": {
             "main": "./lib/actions/DeleteDBParameterGroup.js",
-            "title": "Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.",
+            "title": "DeleteDBParameterGroup",
             "description": "Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.",
             "fields": {
                 "verbose": {
@@ -582,8 +582,8 @@
         },
         "DeleteDBSecurityGroup": {
             "main": "./lib/actions/DeleteDBSecurityGroup.js",
-            "title": "<p>Deletes a DB security group.</p> <note> <p>The specified DB security group must not be associated with any DB instances.</p> </note>",
-            "description": "<p>Deletes a DB security group.</p> <note> <p>The specified DB security group must not be associated with any DB instances.</p> </note>",
+            "title": "DeleteDBSecurityGroup",
+            "description": "Deletes a DB security group.\n\nThe specified DB security group must not be associated with any DB instances.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -599,8 +599,8 @@
         },
         "DeleteDBSnapshot": {
             "main": "./lib/actions/DeleteDBSnapshot.js",
-            "title": "<p>Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.</p> <note> <p>The DB snapshot must be in the <code>available</code> state to be deleted.</p> </note>",
-            "description": "<p>Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.</p> <note> <p>The DB snapshot must be in the <code>available</code> state to be deleted.</p> </note>",
+            "title": "DeleteDBSnapshot",
+            "description": "Deletes a DB snapshot. If the snapshot is being copied, the copy operation is\nterminated.\n\nThe DB snapshot must be in the available state to be deleted.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -616,8 +616,8 @@
         },
         "DeleteDBSubnetGroup": {
             "main": "./lib/actions/DeleteDBSubnetGroup.js",
-            "title": "<p>Deletes a DB subnet group.</p> <note> <p>The specified database subnet group must not be associated with any DB instances.</p> </note>",
-            "description": "<p>Deletes a DB subnet group.</p> <note> <p>The specified database subnet group must not be associated with any DB instances.</p> </note>",
+            "title": "DeleteDBSubnetGroup",
+            "description": "Deletes a DB subnet group.\n\nThe specified database subnet group must not be associated with any DB\ninstances.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -633,7 +633,7 @@
         },
         "DeleteEventSubscription": {
             "main": "./lib/actions/DeleteEventSubscription.js",
-            "title": "Deletes an RDS event notification subscription.",
+            "title": "DeleteEventSubscription",
             "description": "Deletes an RDS event notification subscription.",
             "fields": {
                 "verbose": {
@@ -650,8 +650,8 @@
         },
         "DeleteGlobalCluster": {
             "main": "./lib/actions/DeleteGlobalCluster.js",
-            "title": "<p> Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DeleteGlobalCluster",
+            "description": " Deletes a global database cluster. The primary and secondary clusters must\nalready be detached or destroyed first. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -667,7 +667,7 @@
         },
         "DeleteOptionGroup": {
             "main": "./lib/actions/DeleteOptionGroup.js",
-            "title": "Deletes an existing option group.",
+            "title": "DeleteOptionGroup",
             "description": "Deletes an existing option group.",
             "fields": {
                 "verbose": {
@@ -684,8 +684,8 @@
         },
         "DescribeAccountAttributes": {
             "main": "./lib/actions/DescribeAccountAttributes.js",
-            "title": "<p>Lists all of the attributes for a customer account. The attributes include Amazon RDS quotas for the account, such as the number of DB instances allowed. The description for a quota includes the quota name, current usage toward that quota, and the quota's maximum value.</p> <p>This command doesn't take any parameters.</p>",
-            "description": "<p>Lists all of the attributes for a customer account. The attributes include Amazon RDS quotas for the account, such as the number of DB instances allowed. The description for a quota includes the quota name, current usage toward that quota, and the quota's maximum value.</p> <p>This command doesn't take any parameters.</p>",
+            "title": "DescribeAccountAttributes",
+            "description": "Lists all of the attributes for a customer account. The attributes include\nAmazon RDS quotas for the account, such as the number of DB instances allowed.\nThe description for a quota includes the quota name, current usage toward that\nquota, and the quota's maximum value.\n\nThis command doesn't take any parameters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -701,7 +701,7 @@
         },
         "DescribeCertificates": {
             "main": "./lib/actions/DescribeCertificates.js",
-            "title": "Lists the set of CA certificates provided by Amazon RDS for this AWS account.",
+            "title": "DescribeCertificates",
             "description": "Lists the set of CA certificates provided by Amazon RDS for this AWS account.",
             "fields": {
                 "verbose": {
@@ -718,8 +718,8 @@
         },
         "DescribeDBClusterBacktracks": {
             "main": "./lib/actions/DescribeDBClusterBacktracks.js",
-            "title": "<p>Returns information about backtracks for a DB cluster.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Returns information about backtracks for a DB cluster.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusterBacktracks",
+            "description": "Returns information about backtracks for a DB cluster.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -735,8 +735,8 @@
         },
         "DescribeDBClusterEndpoints": {
             "main": "./lib/actions/DescribeDBClusterEndpoints.js",
-            "title": "<p>Returns information about endpoints for an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Returns information about endpoints for an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusterEndpoints",
+            "description": "Returns information about endpoints for an Amazon Aurora DB cluster.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -752,8 +752,8 @@
         },
         "DescribeDBClusterParameterGroups": {
             "main": "./lib/actions/DescribeDBClusterParameterGroups.js",
-            "title": "<p> Returns a list of <code>DBClusterParameterGroup</code> descriptions. If a <code>DBClusterParameterGroupName</code> parameter is specified, the list will contain only the description of the specified DB cluster parameter group. </p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Returns a list of <code>DBClusterParameterGroup</code> descriptions. If a <code>DBClusterParameterGroupName</code> parameter is specified, the list will contain only the description of the specified DB cluster parameter group. </p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusterParameterGroups",
+            "description": " Returns a list of DBClusterParameterGroup descriptions. If a \nDBClusterParameterGroupName parameter is specified, the list will contain only\nthe description of the specified DB cluster parameter group. \n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -769,8 +769,8 @@
         },
         "DescribeDBClusterParameters": {
             "main": "./lib/actions/DescribeDBClusterParameters.js",
-            "title": "<p>Returns the detailed parameter list for a particular DB cluster parameter group.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Returns the detailed parameter list for a particular DB cluster parameter group.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusterParameters",
+            "description": "Returns the detailed parameter list for a particular DB cluster parameter group.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -786,8 +786,8 @@
         },
         "DescribeDBClusterSnapshotAttributes": {
             "main": "./lib/actions/DescribeDBClusterSnapshotAttributes.js",
-            "title": "<p>Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot.</p> <p>When sharing snapshots with other AWS accounts, <code>DescribeDBClusterSnapshotAttributes</code> returns the <code>restore</code> attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If <code>all</code> is included in the list of values for the <code>restore</code> attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts.</p> <p>To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the <a>ModifyDBClusterSnapshotAttribute</a> API action.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot.</p> <p>When sharing snapshots with other AWS accounts, <code>DescribeDBClusterSnapshotAttributes</code> returns the <code>restore</code> attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If <code>all</code> is included in the list of values for the <code>restore</code> attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts.</p> <p>To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the <a>ModifyDBClusterSnapshotAttribute</a> API action.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusterSnapshotAttributes",
+            "description": "Returns a list of DB cluster snapshot attribute names and values for a manual DB\ncluster snapshot.\n\nWhen sharing snapshots with other AWS accounts, \nDescribeDBClusterSnapshotAttributes returns the restore attribute and a list of\nIDs for the AWS accounts that are authorized to copy or restore the manual DB\ncluster snapshot. If all is included in the list of values for the restore \nattribute, then the manual DB cluster snapshot is public and can be copied or\nrestored by all AWS accounts.\n\nTo add or remove access for an AWS account to copy or restore a manual DB\ncluster snapshot, or to make the manual DB cluster snapshot public or private,\nuse the ModifyDBClusterSnapshotAttribute API action.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -803,8 +803,8 @@
         },
         "DescribeDBClusterSnapshots": {
             "main": "./lib/actions/DescribeDBClusterSnapshots.js",
-            "title": "<p>Returns information about DB cluster snapshots. This API action supports pagination.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Returns information about DB cluster snapshots. This API action supports pagination.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusterSnapshots",
+            "description": "Returns information about DB cluster snapshots. This API action supports\npagination.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -820,8 +820,8 @@
         },
         "DescribeDBClusters": {
             "main": "./lib/actions/DescribeDBClusters.js",
-            "title": "<p>Returns information about provisioned Aurora DB clusters. This API supports pagination.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Returns information about provisioned Aurora DB clusters. This API supports pagination.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeDBClusters",
+            "description": "Returns information about provisioned Aurora DB clusters. This API supports\npagination.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -837,7 +837,7 @@
         },
         "DescribeDBEngineVersions": {
             "main": "./lib/actions/DescribeDBEngineVersions.js",
-            "title": "Returns a list of the available DB engines.",
+            "title": "DescribeDBEngineVersions",
             "description": "Returns a list of the available DB engines.",
             "fields": {
                 "verbose": {
@@ -854,8 +854,8 @@
         },
         "DescribeDBInstanceAutomatedBackups": {
             "main": "./lib/actions/DescribeDBInstanceAutomatedBackups.js",
-            "title": "<p>Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the <code>DescribeDBInstanceAutomatedBackups</code> and <code>DescribeDBInstances</code> operations.</p> <p>All parameters are optional.</p>",
-            "description": "<p>Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the <code>DescribeDBInstanceAutomatedBackups</code> and <code>DescribeDBInstances</code> operations.</p> <p>All parameters are optional.</p>",
+            "title": "DescribeDBInstanceAutomatedBackups",
+            "description": "Displays backups for both current and deleted instances. For example, use this\noperation to find details about automated backups for previously deleted\ninstances. Current instances with retention periods greater than zero (0) are\nreturned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances \noperations.\n\nAll parameters are optional.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -871,7 +871,7 @@
         },
         "DescribeDBInstances": {
             "main": "./lib/actions/DescribeDBInstances.js",
-            "title": "Returns information about provisioned RDS instances. This API supports pagination.",
+            "title": "DescribeDBInstances",
             "description": "Returns information about provisioned RDS instances. This API supports pagination.",
             "fields": {
                 "verbose": {
@@ -888,7 +888,7 @@
         },
         "DescribeDBLogFiles": {
             "main": "./lib/actions/DescribeDBLogFiles.js",
-            "title": "Returns a list of DB log files for the DB instance.",
+            "title": "DescribeDBLogFiles",
             "description": "Returns a list of DB log files for the DB instance.",
             "fields": {
                 "verbose": {
@@ -905,7 +905,7 @@
         },
         "DescribeDBParameterGroups": {
             "main": "./lib/actions/DescribeDBParameterGroups.js",
-            "title": " Returns a list of <code>DBParameterGroup</code> descriptions. If a <code>DBParameterGroupName</code> is specified, the list will contain only the description of the specified DB parameter group. ",
+            "title": "DescribeDBParameterGroups",
             "description": " Returns a list of <code>DBParameterGroup</code> descriptions. If a <code>DBParameterGroupName</code> is specified, the list will contain only the description of the specified DB parameter group. ",
             "fields": {
                 "verbose": {
@@ -922,7 +922,7 @@
         },
         "DescribeDBParameters": {
             "main": "./lib/actions/DescribeDBParameters.js",
-            "title": "Returns the detailed parameter list for a particular DB parameter group.",
+            "title": "DescribeDBParameters",
             "description": "Returns the detailed parameter list for a particular DB parameter group.",
             "fields": {
                 "verbose": {
@@ -939,7 +939,7 @@
         },
         "DescribeDBSecurityGroups": {
             "main": "./lib/actions/DescribeDBSecurityGroups.js",
-            "title": " Returns a list of <code>DBSecurityGroup</code> descriptions. If a <code>DBSecurityGroupName</code> is specified, the list will contain only the descriptions of the specified DB security group. ",
+            "title": "DescribeDBSecurityGroups",
             "description": " Returns a list of <code>DBSecurityGroup</code> descriptions. If a <code>DBSecurityGroupName</code> is specified, the list will contain only the descriptions of the specified DB security group. ",
             "fields": {
                 "verbose": {
@@ -956,8 +956,8 @@
         },
         "DescribeDBSnapshotAttributes": {
             "main": "./lib/actions/DescribeDBSnapshotAttributes.js",
-            "title": "<p>Returns a list of DB snapshot attribute names and values for a manual DB snapshot.</p> <p>When sharing snapshots with other AWS accounts, <code>DescribeDBSnapshotAttributes</code> returns the <code>restore</code> attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB snapshot. If <code>all</code> is included in the list of values for the <code>restore</code> attribute, then the manual DB snapshot is public and can be copied or restored by all AWS accounts.</p> <p>To add or remove access for an AWS account to copy or restore a manual DB snapshot, or to make the manual DB snapshot public or private, use the <a>ModifyDBSnapshotAttribute</a> API action.</p>",
-            "description": "<p>Returns a list of DB snapshot attribute names and values for a manual DB snapshot.</p> <p>When sharing snapshots with other AWS accounts, <code>DescribeDBSnapshotAttributes</code> returns the <code>restore</code> attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB snapshot. If <code>all</code> is included in the list of values for the <code>restore</code> attribute, then the manual DB snapshot is public and can be copied or restored by all AWS accounts.</p> <p>To add or remove access for an AWS account to copy or restore a manual DB snapshot, or to make the manual DB snapshot public or private, use the <a>ModifyDBSnapshotAttribute</a> API action.</p>",
+            "title": "DescribeDBSnapshotAttributes",
+            "description": "Returns a list of DB snapshot attribute names and values for a manual DB\nsnapshot.\n\nWhen sharing snapshots with other AWS accounts, DescribeDBSnapshotAttributes \nreturns the restore attribute and a list of IDs for the AWS accounts that are\nauthorized to copy or restore the manual DB snapshot. If all is included in the\nlist of values for the restore attribute, then the manual DB snapshot is public\nand can be copied or restored by all AWS accounts.\n\nTo add or remove access for an AWS account to copy or restore a manual DB\nsnapshot, or to make the manual DB snapshot public or private, use the \nModifyDBSnapshotAttribute API action.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -973,7 +973,7 @@
         },
         "DescribeDBSnapshots": {
             "main": "./lib/actions/DescribeDBSnapshots.js",
-            "title": "Returns information about DB snapshots. This API action supports pagination.",
+            "title": "DescribeDBSnapshots",
             "description": "Returns information about DB snapshots. This API action supports pagination.",
             "fields": {
                 "verbose": {
@@ -990,8 +990,8 @@
         },
         "DescribeDBSubnetGroups": {
             "main": "./lib/actions/DescribeDBSubnetGroups.js",
-            "title": "<p>Returns a list of DBSubnetGroup descriptions. If a DBSubnetGroupName is specified, the list will contain only the descriptions of the specified DBSubnetGroup.</p> <p>For an overview of CIDR ranges, go to the <a href=\"http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing\">Wikipedia Tutorial</a>. </p>",
-            "description": "<p>Returns a list of DBSubnetGroup descriptions. If a DBSubnetGroupName is specified, the list will contain only the descriptions of the specified DBSubnetGroup.</p> <p>For an overview of CIDR ranges, go to the <a href=\"http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing\">Wikipedia Tutorial</a>. </p>",
+            "title": "DescribeDBSubnetGroups",
+            "description": "Returns a list of DBSubnetGroup descriptions. If a DBSubnetGroupName is\nspecified, the list will contain only the descriptions of the specified\nDBSubnetGroup.\n\nFor an overview of CIDR ranges, go to the Wikipedia Tutorial\n[http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing].",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1007,8 +1007,8 @@
         },
         "DescribeEngineDefaultClusterParameters": {
             "main": "./lib/actions/DescribeEngineDefaultClusterParameters.js",
-            "title": "<p>Returns the default engine and system parameter information for the cluster database engine.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>",
-            "description": "<p>Returns the default engine and system parameter information for the cluster database engine.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>",
+            "title": "DescribeEngineDefaultClusterParameters",
+            "description": "Returns the default engine and system parameter information for the cluster\ndatabase engine.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1024,7 +1024,7 @@
         },
         "DescribeEngineDefaultParameters": {
             "main": "./lib/actions/DescribeEngineDefaultParameters.js",
-            "title": "Returns the default engine and system parameter information for the specified database engine.",
+            "title": "DescribeEngineDefaultParameters",
             "description": "Returns the default engine and system parameter information for the specified database engine.",
             "fields": {
                 "verbose": {
@@ -1041,7 +1041,7 @@
         },
         "DescribeEventCategories": {
             "main": "./lib/actions/DescribeEventCategories.js",
-            "title": "Displays a list of categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html\"> Events</a> topic in the <i>Amazon RDS User Guide.</i> ",
+            "title": "DescribeEventCategories",
             "description": "Displays a list of categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html\"> Events</a> topic in the <i>Amazon RDS User Guide.</i> ",
             "fields": {
                 "verbose": {
@@ -1058,8 +1058,8 @@
         },
         "DescribeEventSubscriptions": {
             "main": "./lib/actions/DescribeEventSubscriptions.js",
-            "title": "<p>Lists all the subscription descriptions for a customer account. The description for a subscription includes SubscriptionName, SNSTopicARN, CustomerID, SourceType, SourceID, CreationTime, and Status.</p> <p>If you specify a SubscriptionName, lists the description for that subscription.</p>",
-            "description": "<p>Lists all the subscription descriptions for a customer account. The description for a subscription includes SubscriptionName, SNSTopicARN, CustomerID, SourceType, SourceID, CreationTime, and Status.</p> <p>If you specify a SubscriptionName, lists the description for that subscription.</p>",
+            "title": "DescribeEventSubscriptions",
+            "description": "Lists all the subscription descriptions for a customer account. The description\nfor a subscription includes SubscriptionName, SNSTopicARN, CustomerID,\nSourceType, SourceID, CreationTime, and Status.\n\nIf you specify a SubscriptionName, lists the description for that subscription.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1075,7 +1075,7 @@
         },
         "DescribeEvents": {
             "main": "./lib/actions/DescribeEvents.js",
-            "title": "Returns events related to DB instances, DB security groups, DB snapshots, and DB parameter groups for the past 14 days. Events specific to a particular DB instance, DB security group, database snapshot, or DB parameter group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.",
+            "title": "DescribeEvents",
             "description": "Returns events related to DB instances, DB security groups, DB snapshots, and DB parameter groups for the past 14 days. Events specific to a particular DB instance, DB security group, database snapshot, or DB parameter group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.",
             "fields": {
                 "verbose": {
@@ -1092,8 +1092,8 @@
         },
         "DescribeGlobalClusters": {
             "main": "./lib/actions/DescribeGlobalClusters.js",
-            "title": "<p> Returns information about Aurora global database clusters. This API supports pagination. </p> <p> For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Returns information about Aurora global database clusters. This API supports pagination. </p> <p> For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "DescribeGlobalClusters",
+            "description": " Returns information about Aurora global database clusters. This API supports\npagination. \n\n For more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1109,7 +1109,7 @@
         },
         "DescribeOptionGroupOptions": {
             "main": "./lib/actions/DescribeOptionGroupOptions.js",
-            "title": "Describes all available options.",
+            "title": "DescribeOptionGroupOptions",
             "description": "Describes all available options.",
             "fields": {
                 "verbose": {
@@ -1126,7 +1126,7 @@
         },
         "DescribeOptionGroups": {
             "main": "./lib/actions/DescribeOptionGroups.js",
-            "title": "Describes the available option groups.",
+            "title": "DescribeOptionGroups",
             "description": "Describes the available option groups.",
             "fields": {
                 "verbose": {
@@ -1143,7 +1143,7 @@
         },
         "DescribeOrderableDBInstanceOptions": {
             "main": "./lib/actions/DescribeOrderableDBInstanceOptions.js",
-            "title": "Returns a list of orderable DB instance options for the specified engine.",
+            "title": "DescribeOrderableDBInstanceOptions",
             "description": "Returns a list of orderable DB instance options for the specified engine.",
             "fields": {
                 "verbose": {
@@ -1160,7 +1160,7 @@
         },
         "DescribePendingMaintenanceActions": {
             "main": "./lib/actions/DescribePendingMaintenanceActions.js",
-            "title": "Returns a list of resources (for example, DB instances) that have at least one pending maintenance action.",
+            "title": "DescribePendingMaintenanceActions",
             "description": "Returns a list of resources (for example, DB instances) that have at least one pending maintenance action.",
             "fields": {
                 "verbose": {
@@ -1177,7 +1177,7 @@
         },
         "DescribeReservedDBInstances": {
             "main": "./lib/actions/DescribeReservedDBInstances.js",
-            "title": "Returns information about reserved DB instances for this account, or about a specified reserved DB instance.",
+            "title": "DescribeReservedDBInstances",
             "description": "Returns information about reserved DB instances for this account, or about a specified reserved DB instance.",
             "fields": {
                 "verbose": {
@@ -1194,7 +1194,7 @@
         },
         "DescribeReservedDBInstancesOfferings": {
             "main": "./lib/actions/DescribeReservedDBInstancesOfferings.js",
-            "title": "Lists available reserved DB instance offerings.",
+            "title": "DescribeReservedDBInstancesOfferings",
             "description": "Lists available reserved DB instance offerings.",
             "fields": {
                 "verbose": {
@@ -1211,7 +1211,7 @@
         },
         "DescribeSourceRegions": {
             "main": "./lib/actions/DescribeSourceRegions.js",
-            "title": "Returns a list of the source AWS Regions where the current AWS Region can create a Read Replica or copy a DB snapshot from. This API action supports pagination.",
+            "title": "DescribeSourceRegions",
             "description": "Returns a list of the source AWS Regions where the current AWS Region can create a Read Replica or copy a DB snapshot from. This API action supports pagination.",
             "fields": {
                 "verbose": {
@@ -1228,7 +1228,7 @@
         },
         "DescribeValidDBInstanceModifications": {
             "main": "./lib/actions/DescribeValidDBInstanceModifications.js",
-            "title": "You can call <a>DescribeValidDBInstanceModifications</a> to learn what modifications you can make to your DB instance. You can use this information when you call <a>ModifyDBInstance</a>. ",
+            "title": "DescribeValidDBInstanceModifications",
             "description": "You can call <a>DescribeValidDBInstanceModifications</a> to learn what modifications you can make to your DB instance. You can use this information when you call <a>ModifyDBInstance</a>. ",
             "fields": {
                 "verbose": {
@@ -1245,7 +1245,7 @@
         },
         "DownloadDBLogFilePortion": {
             "main": "./lib/actions/DownloadDBLogFilePortion.js",
-            "title": "Downloads all or a portion of the specified log file, up to 1 MB in size.",
+            "title": "DownloadDBLogFilePortion",
             "description": "Downloads all or a portion of the specified log file, up to 1 MB in size.",
             "fields": {
                 "verbose": {
@@ -1262,8 +1262,8 @@
         },
         "FailoverDBCluster": {
             "main": "./lib/actions/FailoverDBCluster.js",
-            "title": "<p>Forces a failover for a DB cluster.</p> <p>A failover for a DB cluster promotes one of the Aurora Replicas (read-only instances) in the DB cluster to be the primary instance (the cluster writer).</p> <p>Amazon Aurora will automatically fail over to an Aurora Replica, if one exists, when the primary instance fails. You can force a failover when you want to simulate a failure of a primary instance for testing. Because each instance in a DB cluster has its own endpoint address, you will need to clean up and re-establish any existing connections that use those endpoint addresses when the failover is complete.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Forces a failover for a DB cluster.</p> <p>A failover for a DB cluster promotes one of the Aurora Replicas (read-only instances) in the DB cluster to be the primary instance (the cluster writer).</p> <p>Amazon Aurora will automatically fail over to an Aurora Replica, if one exists, when the primary instance fails. You can force a failover when you want to simulate a failure of a primary instance for testing. Because each instance in a DB cluster has its own endpoint address, you will need to clean up and re-establish any existing connections that use those endpoint addresses when the failover is complete.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "FailoverDBCluster",
+            "description": "Forces a failover for a DB cluster.\n\nA failover for a DB cluster promotes one of the Aurora Replicas (read-only\ninstances) in the DB cluster to be the primary instance (the cluster writer).\n\nAmazon Aurora will automatically fail over to an Aurora Replica, if one exists,\nwhen the primary instance fails. You can force a failover when you want to\nsimulate a failure of a primary instance for testing. Because each instance in a\nDB cluster has its own endpoint address, you will need to clean up and\nre-establish any existing connections that use those endpoint addresses when the\nfailover is complete.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1279,8 +1279,8 @@
         },
         "ListTagsForResource": {
             "main": "./lib/actions/ListTagsForResource.js",
-            "title": "<p>Lists all tags on an Amazon RDS resource.</p> <p>For an overview on tagging an Amazon RDS resource, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html\">Tagging Amazon RDS Resources</a> in the <i>Amazon RDS User Guide</i>.</p>",
-            "description": "<p>Lists all tags on an Amazon RDS resource.</p> <p>For an overview on tagging an Amazon RDS resource, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html\">Tagging Amazon RDS Resources</a> in the <i>Amazon RDS User Guide</i>.</p>",
+            "title": "ListTagsForResource",
+            "description": "Lists all tags on an Amazon RDS resource.\n\nFor an overview on tagging an Amazon RDS resource, see Tagging Amazon RDS\nResources\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html] \nin the Amazon RDS User Guide.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1296,8 +1296,8 @@
         },
         "ModifyCurrentDBClusterCapacity": {
             "main": "./lib/actions/ModifyCurrentDBClusterCapacity.js",
-            "title": "<p>Set the capacity of an Aurora Serverless DB cluster to a specific value.</p> <p>Aurora Serverless scales seamlessly based on the workload on the DB cluster. In some cases, the capacity might not scale fast enough to meet a sudden change in workload, such as a large number of new transactions. Call <code>ModifyCurrentDBClusterCapacity</code> to set the capacity explicitly.</p> <p>After this call sets the DB cluster capacity, Aurora Serverless can automatically scale the DB cluster based on the cooldown period for scaling up and the cooldown period for scaling down.</p> <p>For more information about Aurora Serverless, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html\">Using Amazon Aurora Serverless</a> in the <i>Amazon Aurora User Guide</i>.</p> <important> <p>If you call <code>ModifyCurrentDBClusterCapacity</code> with the default <code>TimeoutAction</code>, connections that prevent Aurora Serverless from finding a scaling point might be dropped. For more information about scaling points, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html#aurora-serverless.how-it-works.auto-scaling\"> Autoscaling for Aurora Serverless</a> in the <i>Amazon Aurora User Guide</i>.</p> </important> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Set the capacity of an Aurora Serverless DB cluster to a specific value.</p> <p>Aurora Serverless scales seamlessly based on the workload on the DB cluster. In some cases, the capacity might not scale fast enough to meet a sudden change in workload, such as a large number of new transactions. Call <code>ModifyCurrentDBClusterCapacity</code> to set the capacity explicitly.</p> <p>After this call sets the DB cluster capacity, Aurora Serverless can automatically scale the DB cluster based on the cooldown period for scaling up and the cooldown period for scaling down.</p> <p>For more information about Aurora Serverless, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html\">Using Amazon Aurora Serverless</a> in the <i>Amazon Aurora User Guide</i>.</p> <important> <p>If you call <code>ModifyCurrentDBClusterCapacity</code> with the default <code>TimeoutAction</code>, connections that prevent Aurora Serverless from finding a scaling point might be dropped. For more information about scaling points, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html#aurora-serverless.how-it-works.auto-scaling\"> Autoscaling for Aurora Serverless</a> in the <i>Amazon Aurora User Guide</i>.</p> </important> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ModifyCurrentDBClusterCapacity",
+            "description": "Set the capacity of an Aurora Serverless DB cluster to a specific value.\n\nAurora Serverless scales seamlessly based on the workload on the DB cluster. In\nsome cases, the capacity might not scale fast enough to meet a sudden change in\nworkload, such as a large number of new transactions. Call \nModifyCurrentDBClusterCapacity to set the capacity explicitly.\n\nAfter this call sets the DB cluster capacity, Aurora Serverless can\nautomatically scale the DB cluster based on the cooldown period for scaling up\nand the cooldown period for scaling down.\n\nFor more information about Aurora Serverless, see Using Amazon Aurora Serverless\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html] \nin the Amazon Aurora User Guide.\n\nIf you call ModifyCurrentDBClusterCapacity with the default TimeoutAction,\nconnections that prevent Aurora Serverless from finding a scaling point might be\ndropped. For more information about scaling points, see Autoscaling for Aurora\nServerless\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html#aurora-serverless.how-it-works.auto-scaling] \nin the Amazon Aurora User Guide.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1313,8 +1313,8 @@
         },
         "ModifyDBCluster": {
             "main": "./lib/actions/ModifyDBCluster.js",
-            "title": "<p>Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ModifyDBCluster",
+            "description": "Modify a setting for an Amazon Aurora DB cluster. You can change one or more\ndatabase configuration parameters by specifying these parameters and the new\nvalues in the request. For more information on Amazon Aurora, see What Is Amazon\nAurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1330,8 +1330,8 @@
         },
         "ModifyDBClusterEndpoint": {
             "main": "./lib/actions/ModifyDBClusterEndpoint.js",
-            "title": "<p>Modifies the properties of an endpoint in an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Modifies the properties of an endpoint in an Amazon Aurora DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ModifyDBClusterEndpoint",
+            "description": "Modifies the properties of an endpoint in an Amazon Aurora DB cluster.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1347,8 +1347,8 @@
         },
         "ModifyDBClusterParameterGroup": {
             "main": "./lib/actions/ModifyDBClusterParameterGroup.js",
-            "title": "<p> Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: <code>ParameterName</code>, <code>ParameterValue</code>, and <code>ApplyMethod</code>. A maximum of 20 parameters can be modified in a single request. </p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.</p> </note> <important> <p>After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <a>DescribeDBClusterParameters</a> command to verify that your DB cluster parameter group has been created or modified.</p> </important> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: <code>ParameterName</code>, <code>ParameterValue</code>, and <code>ApplyMethod</code>. A maximum of 20 parameters can be modified in a single request. </p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.</p> </note> <important> <p>After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <a>DescribeDBClusterParameters</a> command to verify that your DB cluster parameter group has been created or modified.</p> </important> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ModifyDBClusterParameterGroup",
+            "description": " Modifies the parameters of a DB cluster parameter group. To modify more than\none parameter, submit a list of the following: ParameterName, ParameterValue,\nand ApplyMethod. A maximum of 20 parameters can be modified in a single request. \n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nChanges to dynamic parameters are applied immediately. Changes to static\nparameters require a reboot without failover to the DB cluster associated with\nthe parameter group before the change can take effect.\n\nAfter you create a DB cluster parameter group, you should wait at least 5\nminutes before creating your first DB cluster that uses that DB cluster\nparameter group as the default parameter group. This allows Amazon RDS to fully\ncomplete the create action before the parameter group is used as the default for\na new DB cluster. This is especially important for parameters that are critical\nwhen creating the default database for a DB cluster, such as the character set\nfor the default database defined by the character_set_database parameter. You\ncan use the Parameter Groups option of the Amazon RDS console\n[https://console.aws.amazon.com/rds/] or the DescribeDBClusterParameters command\nto verify that your DB cluster parameter group has been created or modified.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1364,8 +1364,8 @@
         },
         "ModifyDBClusterSnapshotAttribute": {
             "main": "./lib/actions/ModifyDBClusterSnapshotAttribute.js",
-            "title": "<p>Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot.</p> <p>To share a manual DB cluster snapshot with other AWS accounts, specify <code>restore</code> as the <code>AttributeName</code> and use the <code>ValuesToAdd</code> parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value <code>all</code> to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the <code>all</code> value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the <code>ValuesToAdd</code> parameter. You can't use <code>all</code> as a value for that parameter in this case.</p> <p>To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the <a>DescribeDBClusterSnapshotAttributes</a> API action.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot.</p> <p>To share a manual DB cluster snapshot with other AWS accounts, specify <code>restore</code> as the <code>AttributeName</code> and use the <code>ValuesToAdd</code> parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value <code>all</code> to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the <code>all</code> value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the <code>ValuesToAdd</code> parameter. You can't use <code>all</code> as a value for that parameter in this case.</p> <p>To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the <a>DescribeDBClusterSnapshotAttributes</a> API action.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ModifyDBClusterSnapshotAttribute",
+            "description": "Adds an attribute and values to, or removes an attribute and values from, a\nmanual DB cluster snapshot.\n\nTo share a manual DB cluster snapshot with other AWS accounts, specify restore \nas the AttributeName and use the ValuesToAdd parameter to add a list of IDs of\nthe AWS accounts that are authorized to restore the manual DB cluster snapshot.\nUse the value all to make the manual DB cluster snapshot public, which means\nthat it can be copied or restored by all AWS accounts. Do not add the all value\nfor any manual DB cluster snapshots that contain private information that you\ndon't want available to all AWS accounts. If a manual DB cluster snapshot is\nencrypted, it can be shared, but only by specifying a list of authorized AWS\naccount IDs for the ValuesToAdd parameter. You can't use all as a value for that\nparameter in this case.\n\nTo view which AWS accounts have access to copy or restore a manual DB cluster\nsnapshot, or whether a manual DB cluster snapshot public or private, use the \nDescribeDBClusterSnapshotAttributes API action.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1381,7 +1381,7 @@
         },
         "ModifyDBInstance": {
             "main": "./lib/actions/ModifyDBInstance.js",
-            "title": "Modifies settings for a DB instance. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. To learn what modifications you can make to your DB instance, call <a>DescribeValidDBInstanceModifications</a> before you call <a>ModifyDBInstance</a>. ",
+            "title": "ModifyDBInstance",
             "description": "Modifies settings for a DB instance. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. To learn what modifications you can make to your DB instance, call <a>DescribeValidDBInstanceModifications</a> before you call <a>ModifyDBInstance</a>. ",
             "fields": {
                 "verbose": {
@@ -1398,8 +1398,8 @@
         },
         "ModifyDBParameterGroup": {
             "main": "./lib/actions/ModifyDBParameterGroup.js",
-            "title": "<p> Modifies the parameters of a DB parameter group. To modify more than one parameter, submit a list of the following: <code>ParameterName</code>, <code>ParameterValue</code>, and <code>ApplyMethod</code>. A maximum of 20 parameters can be modified in a single request. </p> <note> <p>Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB instance associated with the parameter group before the change can take effect.</p> </note> <important> <p>After you modify a DB parameter group, you should wait at least 5 minutes before creating your first DB instance that uses that DB parameter group as the default parameter group. This allows Amazon RDS to fully complete the modify action before the parameter group is used as the default for a new DB instance. This is especially important for parameters that are critical when creating the default database for a DB instance, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <i>DescribeDBParameters</i> command to verify that your DB parameter group has been created or modified.</p> </important>",
-            "description": "<p> Modifies the parameters of a DB parameter group. To modify more than one parameter, submit a list of the following: <code>ParameterName</code>, <code>ParameterValue</code>, and <code>ApplyMethod</code>. A maximum of 20 parameters can be modified in a single request. </p> <note> <p>Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB instance associated with the parameter group before the change can take effect.</p> </note> <important> <p>After you modify a DB parameter group, you should wait at least 5 minutes before creating your first DB instance that uses that DB parameter group as the default parameter group. This allows Amazon RDS to fully complete the modify action before the parameter group is used as the default for a new DB instance. This is especially important for parameters that are critical when creating the default database for a DB instance, such as the character set for the default database defined by the <code>character_set_database</code> parameter. You can use the <i>Parameter Groups</i> option of the <a href=\"https://console.aws.amazon.com/rds/\">Amazon RDS console</a> or the <i>DescribeDBParameters</i> command to verify that your DB parameter group has been created or modified.</p> </important>",
+            "title": "ModifyDBParameterGroup",
+            "description": " Modifies the parameters of a DB parameter group. To modify more than one\nparameter, submit a list of the following: ParameterName, ParameterValue, and \nApplyMethod. A maximum of 20 parameters can be modified in a single request. \n\nChanges to dynamic parameters are applied immediately. Changes to static\nparameters require a reboot without failover to the DB instance associated with\nthe parameter group before the change can take effect.\n\nAfter you modify a DB parameter group, you should wait at least 5 minutes before\ncreating your first DB instance that uses that DB parameter group as the default\nparameter group. This allows Amazon RDS to fully complete the modify action\nbefore the parameter group is used as the default for a new DB instance. This is\nespecially important for parameters that are critical when creating the default\ndatabase for a DB instance, such as the character set for the default database\ndefined by the character_set_database parameter. You can use the Parameter\nGroups option of the Amazon RDS console [https://console.aws.amazon.com/rds/] or\nthe DescribeDBParameters command to verify that your DB parameter group has been\ncreated or modified.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1415,8 +1415,8 @@
         },
         "ModifyDBSnapshot": {
             "main": "./lib/actions/ModifyDBSnapshot.js",
-            "title": "<p>Updates a manual DB snapshot, which can be encrypted or not encrypted, with a new engine version. </p> <p>Amazon RDS supports upgrading DB snapshots for MySQL and Oracle. </p>",
-            "description": "<p>Updates a manual DB snapshot, which can be encrypted or not encrypted, with a new engine version. </p> <p>Amazon RDS supports upgrading DB snapshots for MySQL and Oracle. </p>",
+            "title": "ModifyDBSnapshot",
+            "description": "Updates a manual DB snapshot, which can be encrypted or not encrypted, with a\nnew engine version. \n\nAmazon RDS supports upgrading DB snapshots for MySQL and Oracle.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1432,8 +1432,8 @@
         },
         "ModifyDBSnapshotAttribute": {
             "main": "./lib/actions/ModifyDBSnapshotAttribute.js",
-            "title": "<p>Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot.</p> <p>To share a manual DB snapshot with other AWS accounts, specify <code>restore</code> as the <code>AttributeName</code> and use the <code>ValuesToAdd</code> parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value <code>all</code> to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts. Do not add the <code>all</code> value for any manual DB snapshots that contain private information that you don't want available to all AWS accounts. If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the <code>ValuesToAdd</code> parameter. You can't use <code>all</code> as a value for that parameter in this case.</p> <p>To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the <a>DescribeDBSnapshotAttributes</a> API action.</p>",
-            "description": "<p>Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot.</p> <p>To share a manual DB snapshot with other AWS accounts, specify <code>restore</code> as the <code>AttributeName</code> and use the <code>ValuesToAdd</code> parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value <code>all</code> to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts. Do not add the <code>all</code> value for any manual DB snapshots that contain private information that you don't want available to all AWS accounts. If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the <code>ValuesToAdd</code> parameter. You can't use <code>all</code> as a value for that parameter in this case.</p> <p>To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the <a>DescribeDBSnapshotAttributes</a> API action.</p>",
+            "title": "ModifyDBSnapshotAttribute",
+            "description": "Adds an attribute and values to, or removes an attribute and values from, a\nmanual DB snapshot.\n\nTo share a manual DB snapshot with other AWS accounts, specify restore as the \nAttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS\naccounts that are authorized to restore the manual DB snapshot. Uses the value \nall to make the manual DB snapshot public, which means it can be copied or\nrestored by all AWS accounts. Do not add the all value for any manual DB\nsnapshots that contain private information that you don't want available to all\nAWS accounts. If the manual DB snapshot is encrypted, it can be shared, but only\nby specifying a list of authorized AWS account IDs for the ValuesToAdd \nparameter. You can't use all as a value for that parameter in this case.\n\nTo view which AWS accounts have access to copy or restore a manual DB snapshot,\nor whether a manual DB snapshot public or private, use the \nDescribeDBSnapshotAttributes API action.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1449,7 +1449,7 @@
         },
         "ModifyDBSubnetGroup": {
             "main": "./lib/actions/ModifyDBSubnetGroup.js",
-            "title": "Modifies an existing DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.",
+            "title": "ModifyDBSubnetGroup",
             "description": "Modifies an existing DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.",
             "fields": {
                 "verbose": {
@@ -1466,8 +1466,8 @@
         },
         "ModifyEventSubscription": {
             "main": "./lib/actions/ModifyEventSubscription.js",
-            "title": "<p>Modifies an existing RDS event notification subscription. Note that you can't modify the source identifiers using this call; to change source identifiers for a subscription, use the <a>AddSourceIdentifierToSubscription</a> and <a>RemoveSourceIdentifierFromSubscription</a> calls.</p> <p>You can see a list of the event categories for a given SourceType in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html\">Events</a> topic in the <i>Amazon RDS User Guide</i> or by using the <b>DescribeEventCategories</b> action.</p>",
-            "description": "<p>Modifies an existing RDS event notification subscription. Note that you can't modify the source identifiers using this call; to change source identifiers for a subscription, use the <a>AddSourceIdentifierToSubscription</a> and <a>RemoveSourceIdentifierFromSubscription</a> calls.</p> <p>You can see a list of the event categories for a given SourceType in the <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html\">Events</a> topic in the <i>Amazon RDS User Guide</i> or by using the <b>DescribeEventCategories</b> action.</p>",
+            "title": "ModifyEventSubscription",
+            "description": "Modifies an existing RDS event notification subscription. Note that you can't\nmodify the source identifiers using this call; to change source identifiers for\na subscription, use the AddSourceIdentifierToSubscription and \nRemoveSourceIdentifierFromSubscription calls.\n\nYou can see a list of the event categories for a given SourceType in the Events\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html] topic\nin the Amazon RDS User Guide or by using the DescribeEventCategories action.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1483,8 +1483,8 @@
         },
         "ModifyGlobalCluster": {
             "main": "./lib/actions/ModifyGlobalCluster.js",
-            "title": "<p> Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ModifyGlobalCluster",
+            "description": " Modify a setting for an Amazon Aurora global cluster. You can change one or\nmore database configuration parameters by specifying these parameters and the\nnew values in the request. For more information on Amazon Aurora, see What Is\nAmazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1500,7 +1500,7 @@
         },
         "ModifyOptionGroup": {
             "main": "./lib/actions/ModifyOptionGroup.js",
-            "title": "Modifies an existing option group.",
+            "title": "ModifyOptionGroup",
             "description": "Modifies an existing option group.",
             "fields": {
                 "verbose": {
@@ -1517,8 +1517,8 @@
         },
         "PromoteReadReplica": {
             "main": "./lib/actions/PromoteReadReplica.js",
-            "title": "<p>Promotes a Read Replica DB instance to a standalone DB instance.</p> <note> <ul> <li> <p>Backup duration is a function of the amount of changes to the database since the previous backup. If you plan to promote a Read Replica to a standalone instance, we recommend that you enable backups and complete at least one backup prior to promotion. In addition, a Read Replica cannot be promoted to a standalone instance when it is in the <code>backing-up</code> status. If you have enabled backups on your Read Replica, configure the automated backup window so that daily backups do not interfere with Read Replica promotion.</p> </li> <li> <p>This command doesn't apply to Aurora MySQL and Aurora PostgreSQL.</p> </li> </ul> </note>",
-            "description": "<p>Promotes a Read Replica DB instance to a standalone DB instance.</p> <note> <ul> <li> <p>Backup duration is a function of the amount of changes to the database since the previous backup. If you plan to promote a Read Replica to a standalone instance, we recommend that you enable backups and complete at least one backup prior to promotion. In addition, a Read Replica cannot be promoted to a standalone instance when it is in the <code>backing-up</code> status. If you have enabled backups on your Read Replica, configure the automated backup window so that daily backups do not interfere with Read Replica promotion.</p> </li> <li> <p>This command doesn't apply to Aurora MySQL and Aurora PostgreSQL.</p> </li> </ul> </note>",
+            "title": "PromoteReadReplica",
+            "description": "Promotes a Read Replica DB instance to a standalone DB instance.\n\n *  Backup duration is a function of the amount of changes to the database since\n   the previous backup. If you plan to promote a Read Replica to a standalone\n   instance, we recommend that you enable backups and complete at least one\n   backup prior to promotion. In addition, a Read Replica cannot be promoted to\n   a standalone instance when it is in the backing-up status. If you have\n   enabled backups on your Read Replica, configure the automated backup window\n   so that daily backups do not interfere with Read Replica promotion.\n   \n   \n *  This command doesn't apply to Aurora MySQL and Aurora PostgreSQL.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1534,8 +1534,8 @@
         },
         "PromoteReadReplicaDBCluster": {
             "main": "./lib/actions/PromoteReadReplicaDBCluster.js",
-            "title": "<p>Promotes a Read Replica DB cluster to a standalone DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Promotes a Read Replica DB cluster to a standalone DB cluster.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "PromoteReadReplicaDBCluster",
+            "description": "Promotes a Read Replica DB cluster to a standalone DB cluster.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1551,7 +1551,7 @@
         },
         "PurchaseReservedDBInstancesOffering": {
             "main": "./lib/actions/PurchaseReservedDBInstancesOffering.js",
-            "title": "Purchases a reserved DB instance offering.",
+            "title": "PurchaseReservedDBInstancesOffering",
             "description": "Purchases a reserved DB instance offering.",
             "fields": {
                 "verbose": {
@@ -1568,8 +1568,8 @@
         },
         "RebootDBInstance": {
             "main": "./lib/actions/RebootDBInstance.js",
-            "title": "<p>You might need to reboot your DB instance, usually for maintenance reasons. For example, if you make certain modifications, or if you change the DB parameter group associated with the DB instance, you must reboot the instance for the changes to take effect. </p> <p>Rebooting a DB instance restarts the database engine service. Rebooting a DB instance results in a momentary outage, during which the DB instance status is set to rebooting. </p> <p>For more information about rebooting, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RebootInstance.html\">Rebooting a DB Instance</a> in the <i>Amazon RDS User Guide.</i> </p>",
-            "description": "<p>You might need to reboot your DB instance, usually for maintenance reasons. For example, if you make certain modifications, or if you change the DB parameter group associated with the DB instance, you must reboot the instance for the changes to take effect. </p> <p>Rebooting a DB instance restarts the database engine service. Rebooting a DB instance results in a momentary outage, during which the DB instance status is set to rebooting. </p> <p>For more information about rebooting, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RebootInstance.html\">Rebooting a DB Instance</a> in the <i>Amazon RDS User Guide.</i> </p>",
+            "title": "RebootDBInstance",
+            "description": "You might need to reboot your DB instance, usually for maintenance reasons. For\nexample, if you make certain modifications, or if you change the DB parameter\ngroup associated with the DB instance, you must reboot the instance for the\nchanges to take effect. \n\nRebooting a DB instance restarts the database engine service. Rebooting a DB\ninstance results in a momentary outage, during which the DB instance status is\nset to rebooting. \n\nFor more information about rebooting, see Rebooting a DB Instance\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RebootInstance.html] \nin the Amazon RDS User Guide.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1585,8 +1585,8 @@
         },
         "RemoveFromGlobalCluster": {
             "main": "./lib/actions/RemoveFromGlobalCluster.js",
-            "title": "<p> Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "RemoveFromGlobalCluster",
+            "description": " Detaches an Aurora secondary cluster from an Aurora global database cluster.\nThe cluster becomes a standalone cluster with read-write capability instead of\nbeing read-only and receiving data from a primary cluster in a different region. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1602,8 +1602,8 @@
         },
         "RemoveRoleFromDBCluster": {
             "main": "./lib/actions/RemoveRoleFromDBCluster.js",
-            "title": "<p>Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.html\">Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf </a> in the <i>Amazon Aurora User Guide</i>.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.html\">Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf </a> in the <i>Amazon Aurora User Guide</i>.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "RemoveRoleFromDBCluster",
+            "description": "Disassociates an AWS Identity and Access Management (IAM) role from an Amazon\nAurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to\nAccess Other AWS Services on Your Behalf\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.html] \nin the Amazon Aurora User Guide.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1619,7 +1619,7 @@
         },
         "RemoveRoleFromDBInstance": {
             "main": "./lib/actions/RemoveRoleFromDBInstance.js",
-            "title": "Disassociates an AWS Identity and Access Management (IAM) role from a DB instance.",
+            "title": "RemoveRoleFromDBInstance",
             "description": "Disassociates an AWS Identity and Access Management (IAM) role from a DB instance.",
             "fields": {
                 "verbose": {
@@ -1636,7 +1636,7 @@
         },
         "RemoveSourceIdentifierFromSubscription": {
             "main": "./lib/actions/RemoveSourceIdentifierFromSubscription.js",
-            "title": "Removes a source identifier from an existing RDS event notification subscription.",
+            "title": "RemoveSourceIdentifierFromSubscription",
             "description": "Removes a source identifier from an existing RDS event notification subscription.",
             "fields": {
                 "verbose": {
@@ -1653,8 +1653,8 @@
         },
         "RemoveTagsFromResource": {
             "main": "./lib/actions/RemoveTagsFromResource.js",
-            "title": "<p>Removes metadata tags from an Amazon RDS resource.</p> <p>For an overview on tagging an Amazon RDS resource, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html\">Tagging Amazon RDS Resources</a> in the <i>Amazon RDS User Guide.</i> </p>",
-            "description": "<p>Removes metadata tags from an Amazon RDS resource.</p> <p>For an overview on tagging an Amazon RDS resource, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html\">Tagging Amazon RDS Resources</a> in the <i>Amazon RDS User Guide.</i> </p>",
+            "title": "RemoveTagsFromResource",
+            "description": "Removes metadata tags from an Amazon RDS resource.\n\nFor an overview on tagging an Amazon RDS resource, see Tagging Amazon RDS\nResources\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Tagging.html] \nin the Amazon RDS User Guide.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1670,8 +1670,8 @@
         },
         "ResetDBClusterParameterGroup": {
             "main": "./lib/actions/ResetDBClusterParameterGroup.js",
-            "title": "<p> Modifies the parameters of a DB cluster parameter group to the default value. To reset specific parameters submit a list of the following: <code>ParameterName</code> and <code>ApplyMethod</code>. To reset the entire DB cluster parameter group, specify the <code>DBClusterParameterGroupName</code> and <code>ResetAllParameters</code> parameters. </p> <p> When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to <code>pending-reboot</code> to take effect on the next DB instance restart or <a>RebootDBInstance</a> request. You must call <a>RebootDBInstance</a> for every DB instance in your DB cluster that you want the updated static parameter to apply to.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Modifies the parameters of a DB cluster parameter group to the default value. To reset specific parameters submit a list of the following: <code>ParameterName</code> and <code>ApplyMethod</code>. To reset the entire DB cluster parameter group, specify the <code>DBClusterParameterGroupName</code> and <code>ResetAllParameters</code> parameters. </p> <p> When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to <code>pending-reboot</code> to take effect on the next DB instance restart or <a>RebootDBInstance</a> request. You must call <a>RebootDBInstance</a> for every DB instance in your DB cluster that you want the updated static parameter to apply to.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "ResetDBClusterParameterGroup",
+            "description": " Modifies the parameters of a DB cluster parameter group to the default value.\nTo reset specific parameters submit a list of the following: ParameterName and \nApplyMethod. To reset the entire DB cluster parameter group, specify the \nDBClusterParameterGroupName and ResetAllParameters parameters. \n\n When resetting the entire group, dynamic parameters are updated immediately and\nstatic parameters are set to pending-reboot to take effect on the next DB\ninstance restart or RebootDBInstance request. You must call RebootDBInstance for\nevery DB instance in your DB cluster that you want the updated static parameter\nto apply to.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1687,7 +1687,7 @@
         },
         "ResetDBParameterGroup": {
             "main": "./lib/actions/ResetDBParameterGroup.js",
-            "title": "Modifies the parameters of a DB parameter group to the engine/system default value. To reset specific parameters, provide a list of the following: <code>ParameterName</code> and <code>ApplyMethod</code>. To reset the entire DB parameter group, specify the <code>DBParameterGroup</code> name and <code>ResetAllParameters</code> parameters. When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to <code>pending-reboot</code> to take effect on the next DB instance restart or <code>RebootDBInstance</code> request. ",
+            "title": "ResetDBParameterGroup",
             "description": "Modifies the parameters of a DB parameter group to the engine/system default value. To reset specific parameters, provide a list of the following: <code>ParameterName</code> and <code>ApplyMethod</code>. To reset the entire DB parameter group, specify the <code>DBParameterGroup</code> name and <code>ResetAllParameters</code> parameters. When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to <code>pending-reboot</code> to take effect on the next DB instance restart or <code>RebootDBInstance</code> request. ",
             "fields": {
                 "verbose": {
@@ -1704,8 +1704,8 @@
         },
         "RestoreDBClusterFromS3": {
             "main": "./lib/actions/RestoreDBClusterFromS3.js",
-            "title": "<p>Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Migrating.html\"> Migrating Data to an Amazon Aurora MySQL DB Cluster</a> in the <i>Amazon Aurora User Guide</i>.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Migrating.html\"> Migrating Data to an Amazon Aurora MySQL DB Cluster</a> in the <i>Amazon Aurora User Guide</i>.</p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "RestoreDBClusterFromS3",
+            "description": "Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket.\nAmazon RDS must be authorized to access the Amazon S3 bucket and the data must\nbe created using the Percona XtraBackup utility as described in Migrating Data\nto an Amazon Aurora MySQL DB Cluster\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Migrating.html] \nin the Amazon Aurora User Guide.\n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1721,8 +1721,8 @@
         },
         "RestoreDBClusterFromSnapshot": {
             "main": "./lib/actions/RestoreDBClusterFromSnapshot.js",
-            "title": "<p>Creates a new DB cluster from a DB snapshot or DB cluster snapshot.</p> <p>If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group.</p> <p>If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Creates a new DB cluster from a DB snapshot or DB cluster snapshot.</p> <p>If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group.</p> <p>If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group.</p> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "RestoreDBClusterFromSnapshot",
+            "description": "Creates a new DB cluster from a DB snapshot or DB cluster snapshot.\n\nIf a DB snapshot is specified, the target DB cluster is created from the source\nDB snapshot with a default configuration and default security group.\n\nIf a DB cluster snapshot is specified, the target DB cluster is created from the\nsource DB cluster restore point with the same configuration as the original\nsource DB cluster, except that the new DB cluster is created with the default\nsecurity group.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1738,8 +1738,8 @@
         },
         "RestoreDBClusterToPointInTime": {
             "main": "./lib/actions/RestoreDBClusterToPointInTime.js",
-            "title": "<p>Restores a DB cluster to an arbitrary point in time. Users can restore to any point in time before <code>LatestRestorableTime</code> for up to <code>BackupRetentionPeriod</code> days. The target DB cluster is created from the source DB cluster with the same configuration as the original DB cluster, except that the new DB cluster is created with the default DB security group. </p> <note> <p>This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the <a>CreateDBInstance</a> action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in <code>DBClusterIdentifier</code>. You can create DB instances only after the <code>RestoreDBClusterToPointInTime</code> action has completed and the DB cluster is available.</p> </note> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Restores a DB cluster to an arbitrary point in time. Users can restore to any point in time before <code>LatestRestorableTime</code> for up to <code>BackupRetentionPeriod</code> days. The target DB cluster is created from the source DB cluster with the same configuration as the original DB cluster, except that the new DB cluster is created with the default DB security group. </p> <note> <p>This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the <a>CreateDBInstance</a> action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in <code>DBClusterIdentifier</code>. You can create DB instances only after the <code>RestoreDBClusterToPointInTime</code> action has completed and the DB cluster is available.</p> </note> <p>For more information on Amazon Aurora, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html\"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "RestoreDBClusterToPointInTime",
+            "description": "Restores a DB cluster to an arbitrary point in time. Users can restore to any\npoint in time before LatestRestorableTime for up to BackupRetentionPeriod days.\nThe target DB cluster is created from the source DB cluster with the same\nconfiguration as the original DB cluster, except that the new DB cluster is\ncreated with the default DB security group. \n\nThis action only restores the DB cluster, not the DB instances for that DB\ncluster. You must invoke the CreateDBInstance action to create DB instances for\nthe restored DB cluster, specifying the identifier of the restored DB cluster in \nDBClusterIdentifier. You can create DB instances only after the \nRestoreDBClusterToPointInTime action has completed and the DB cluster is\navailable.\n\nFor more information on Amazon Aurora, see What Is Amazon Aurora?\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1755,8 +1755,8 @@
         },
         "RestoreDBInstanceFromDBSnapshot": {
             "main": "./lib/actions/RestoreDBInstanceFromDBSnapshot.js",
-            "title": "<p>Creates a new DB instance from a DB snapshot. The target database is created from the source database restore point with the most of original configuration with the default security group and the default DB parameter group. By default, the new DB instance is created as a single-AZ deployment except when the instance is a SQL Server instance that has an option group that is associated with mirroring; in this case, the instance becomes a mirrored AZ deployment and not a single-AZ deployment.</p> <p>If your intent is to replace your original DB instance with the new, restored DB instance, then rename your original DB instance before you call the RestoreDBInstanceFromDBSnapshot action. RDS doesn't allow two DB instances with the same name. Once you have renamed your original DB instance with a different identifier, then you can pass the original name of the DB instance as the DBInstanceIdentifier in the call to the RestoreDBInstanceFromDBSnapshot action. The result is that you will replace the original DB instance with the DB instance created from the snapshot.</p> <p>If you are restoring from a shared manual DB snapshot, the <code>DBSnapshotIdentifier</code> must be the ARN of the shared DB snapshot.</p> <note> <p>This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora, use <a>RestoreDBClusterFromSnapshot</a>.</p> </note>",
-            "description": "<p>Creates a new DB instance from a DB snapshot. The target database is created from the source database restore point with the most of original configuration with the default security group and the default DB parameter group. By default, the new DB instance is created as a single-AZ deployment except when the instance is a SQL Server instance that has an option group that is associated with mirroring; in this case, the instance becomes a mirrored AZ deployment and not a single-AZ deployment.</p> <p>If your intent is to replace your original DB instance with the new, restored DB instance, then rename your original DB instance before you call the RestoreDBInstanceFromDBSnapshot action. RDS doesn't allow two DB instances with the same name. Once you have renamed your original DB instance with a different identifier, then you can pass the original name of the DB instance as the DBInstanceIdentifier in the call to the RestoreDBInstanceFromDBSnapshot action. The result is that you will replace the original DB instance with the DB instance created from the snapshot.</p> <p>If you are restoring from a shared manual DB snapshot, the <code>DBSnapshotIdentifier</code> must be the ARN of the shared DB snapshot.</p> <note> <p>This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora, use <a>RestoreDBClusterFromSnapshot</a>.</p> </note>",
+            "title": "RestoreDBInstanceFromDBSnapshot",
+            "description": "Creates a new DB instance from a DB snapshot. The target database is created\nfrom the source database restore point with the most of original configuration\nwith the default security group and the default DB parameter group. By default,\nthe new DB instance is created as a single-AZ deployment except when the\ninstance is a SQL Server instance that has an option group that is associated\nwith mirroring; in this case, the instance becomes a mirrored AZ deployment and\nnot a single-AZ deployment.\n\nIf your intent is to replace your original DB instance with the new, restored DB\ninstance, then rename your original DB instance before you call the\nRestoreDBInstanceFromDBSnapshot action. RDS doesn't allow two DB instances with\nthe same name. Once you have renamed your original DB instance with a different\nidentifier, then you can pass the original name of the DB instance as the\nDBInstanceIdentifier in the call to the RestoreDBInstanceFromDBSnapshot action.\nThe result is that you will replace the original DB instance with the DB\ninstance created from the snapshot.\n\nIf you are restoring from a shared manual DB snapshot, the DBSnapshotIdentifier \nmust be the ARN of the shared DB snapshot.\n\nThis command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora,\nuse RestoreDBClusterFromSnapshot.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1772,7 +1772,7 @@
         },
         "RestoreDBInstanceFromS3": {
             "main": "./lib/actions/RestoreDBInstanceFromS3.js",
-            "title": "Amazon Relational Database Service (Amazon RDS) supports importing MySQL databases by using backup files. You can create a backup of your on-premises database, store it on Amazon Simple Storage Service (Amazon S3), and then restore the backup file onto a new Amazon RDS DB instance running MySQL. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html\">Importing Data into an Amazon RDS MySQL DB Instance</a> in the <i>Amazon RDS User Guide.</i> ",
+            "title": "RestoreDBInstanceFromS3",
             "description": "Amazon Relational Database Service (Amazon RDS) supports importing MySQL databases by using backup files. You can create a backup of your on-premises database, store it on Amazon Simple Storage Service (Amazon S3), and then restore the backup file onto a new Amazon RDS DB instance running MySQL. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html\">Importing Data into an Amazon RDS MySQL DB Instance</a> in the <i>Amazon RDS User Guide.</i> ",
             "fields": {
                 "verbose": {
@@ -1789,8 +1789,8 @@
         },
         "RestoreDBInstanceToPointInTime": {
             "main": "./lib/actions/RestoreDBInstanceToPointInTime.js",
-            "title": "<p>Restores a DB instance to an arbitrary point in time. You can restore to any point in time before the time identified by the LatestRestorableTime property. You can restore to a point up to the number of days specified by the BackupRetentionPeriod property.</p> <p>The target database is created with most of the original configuration, but in a system-selected Availability Zone, with the default security group, the default subnet group, and the default DB parameter group. By default, the new DB instance is created as a single-AZ deployment except when the instance is a SQL Server instance that has an option group that is associated with mirroring; in this case, the instance becomes a mirrored deployment and not a single-AZ deployment.</p> <note> <p>This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora, use <a>RestoreDBClusterToPointInTime</a>.</p> </note>",
-            "description": "<p>Restores a DB instance to an arbitrary point in time. You can restore to any point in time before the time identified by the LatestRestorableTime property. You can restore to a point up to the number of days specified by the BackupRetentionPeriod property.</p> <p>The target database is created with most of the original configuration, but in a system-selected Availability Zone, with the default security group, the default subnet group, and the default DB parameter group. By default, the new DB instance is created as a single-AZ deployment except when the instance is a SQL Server instance that has an option group that is associated with mirroring; in this case, the instance becomes a mirrored deployment and not a single-AZ deployment.</p> <note> <p>This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora, use <a>RestoreDBClusterToPointInTime</a>.</p> </note>",
+            "title": "RestoreDBInstanceToPointInTime",
+            "description": "Restores a DB instance to an arbitrary point in time. You can restore to any\npoint in time before the time identified by the LatestRestorableTime property.\nYou can restore to a point up to the number of days specified by the\nBackupRetentionPeriod property.\n\nThe target database is created with most of the original configuration, but in a\nsystem-selected Availability Zone, with the default security group, the default\nsubnet group, and the default DB parameter group. By default, the new DB\ninstance is created as a single-AZ deployment except when the instance is a SQL\nServer instance that has an option group that is associated with mirroring; in\nthis case, the instance becomes a mirrored deployment and not a single-AZ\ndeployment.\n\nThis command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora,\nuse RestoreDBClusterToPointInTime.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1806,7 +1806,7 @@
         },
         "RevokeDBSecurityGroupIngress": {
             "main": "./lib/actions/RevokeDBSecurityGroupIngress.js",
-            "title": "Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or EC2 or VPC Security Groups. Required parameters for this API are one of CIDRIP, EC2SecurityGroupId for VPC, or (EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId).",
+            "title": "RevokeDBSecurityGroupIngress",
             "description": "Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or EC2 or VPC Security Groups. Required parameters for this API are one of CIDRIP, EC2SecurityGroupId for VPC, or (EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId).",
             "fields": {
                 "verbose": {
@@ -1823,8 +1823,8 @@
         },
         "StartDBCluster": {
             "main": "./lib/actions/StartDBCluster.js",
-            "title": "<p>Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action.</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html\"> Stopping and Starting an Aurora Cluster</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p>Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action.</p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html\"> Stopping and Starting an Aurora Cluster</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "StartDBCluster",
+            "description": "Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the\nstop-db-cluster AWS CLI command, or the StopDBCluster action.\n\nFor more information, see Stopping and Starting an Aurora Cluster\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1840,8 +1840,8 @@
         },
         "StartDBInstance": {
             "main": "./lib/actions/StartDBInstance.js",
-            "title": "<p> Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StartInstance.html\"> Starting an Amazon RDS DB instance That Was Previously Stopped</a> in the <i>Amazon RDS User Guide.</i> </p> <note> <p> This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use <a>StartDBCluster</a> instead. </p> </note>",
-            "description": "<p> Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StartInstance.html\"> Starting an Amazon RDS DB instance That Was Previously Stopped</a> in the <i>Amazon RDS User Guide.</i> </p> <note> <p> This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use <a>StartDBCluster</a> instead. </p> </note>",
+            "title": "StartDBInstance",
+            "description": " Starts an Amazon RDS DB instance that was stopped using the AWS console, the\nstop-db-instance AWS CLI command, or the StopDBInstance action. \n\nFor more information, see Starting an Amazon RDS DB instance That Was Previously\nStopped\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StartInstance.html] \nin the Amazon RDS User Guide. \n\n This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB\nclusters, use StartDBCluster instead.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1857,8 +1857,8 @@
         },
         "StopDBCluster": {
             "main": "./lib/actions/StopDBCluster.js",
-            "title": "<p> Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html\"> Stopping and Starting an Aurora Cluster</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
-            "description": "<p> Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html\"> Stopping and Starting an Aurora Cluster</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>",
+            "title": "StopDBCluster",
+            "description": " Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains\nthe DB cluster's metadata, including its endpoints and DB parameter groups.\nAurora also retains the transaction logs so you can do a point-in-time restore\nif necessary. \n\nFor more information, see Stopping and Starting an Aurora Cluster\n[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html] \nin the Amazon Aurora User Guide. \n\nThis action only applies to Aurora DB clusters.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1874,8 +1874,8 @@
         },
         "StopDBInstance": {
             "main": "./lib/actions/StopDBInstance.js",
-            "title": "<p> Stops an Amazon RDS DB instance. When you stop a DB instance, Amazon RDS retains the DB instance's metadata, including its endpoint, DB parameter group, and option group membership. Amazon RDS also retains the transaction logs so you can do a point-in-time restore if necessary. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html\"> Stopping an Amazon RDS DB Instance Temporarily</a> in the <i>Amazon RDS User Guide.</i> </p> <note> <p> This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora clusters, use <a>StopDBCluster</a> instead. </p> </note>",
-            "description": "<p> Stops an Amazon RDS DB instance. When you stop a DB instance, Amazon RDS retains the DB instance's metadata, including its endpoint, DB parameter group, and option group membership. Amazon RDS also retains the transaction logs so you can do a point-in-time restore if necessary. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html\"> Stopping an Amazon RDS DB Instance Temporarily</a> in the <i>Amazon RDS User Guide.</i> </p> <note> <p> This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora clusters, use <a>StopDBCluster</a> instead. </p> </note>",
+            "title": "StopDBInstance",
+            "description": " Stops an Amazon RDS DB instance. When you stop a DB instance, Amazon RDS\nretains the DB instance's metadata, including its endpoint, DB parameter group,\nand option group membership. Amazon RDS also retains the transaction logs so you\ncan do a point-in-time restore if necessary. \n\nFor more information, see Stopping an Amazon RDS DB Instance Temporarily\n[https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html] \nin the Amazon RDS User Guide. \n\n This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora\nclusters, use StopDBCluster instead.",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
